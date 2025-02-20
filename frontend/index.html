@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
@@ -75,8 +75,11 @@
     <header class="header">
       <nav class="nav container">
         <div class="nav__data">
-          <a href="#" class="nav__logo">
-            <img src="assets/img/icon/32x32/icon-32x32.png" alt="Fredy Rodriguez - Logo">
+          <a href="https://fredyrn.com/" class="nav__logo">
+            <img
+              src="assets/img/icon/32x32/icon-32x32.png"
+              alt="Fredy Rodriguez - Logo"
+            />
           </a>
 
           <div class="nav__toggle" id="nav-toggle">
@@ -85,13 +88,12 @@
           </div>
         </div>
 
-        <!--=============== NAV MENU ===============-->
+        <!-- NAV MENU -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-
-            <li><a href="#" class="nav__link">¿Fredy Rodriguez?</a></li>
-
-            <li><a href="#" class="nav__link">Blog</a></li>
+            <li>
+              <a href="https://blog.fredyrn.com/" class="nav__link">Blog</a>
+            </li>
 
             <li><a href="#" class="nav__link">Contact</a></li>
           </ul>
@@ -103,16 +105,24 @@
       <!-- Section 1: Presentation -->
       <section class="hero section" id="hero">
         <div class="content">
-          <h1>
-            Fredy Rodriguez
-          </h1>
-          <p>Desarrollador de Software | Backend & Automatización</p>
+          <h1>Fredy Rodriguez</h1>
+          <p>
+            Software Developer |
+            <span class="accent">Backend & Automation</span>
+          </p>
+          <div class="container">
+            <p>
+              <span class="accent">Hello!</span> I'm Fredy Rodriguez, a
+              passionate Software Developer with over <span class="accent">8 years of experience</span>
+              specializing in backend development and automation. I enjoy
+              building robust solutions using Python, Go, and Rust, and I'm
+              always seeking new challenges in the tech world.
+            </p>
+            <p class="accent">projects@fredyrn.com</p>
+          </div>
           <div class="social-buttons">
             <a href="https://github.com/fredyrn" target="_blank" class="btn"
               >⭐ GitHub</a
-            >
-            <a href="https://twitter.com/fredyrn" target="_blank" class="btn"
-              >🐦 Twitter</a
             >
             <a
               href="https://linkedin.com/in/fredyrn"
@@ -120,16 +130,13 @@
               class="btn"
               >🔗 LinkedIn</a
             >
-            <a href="https://facebook.com/fredyrn" target="_blank" class="btn"
-              >📘 Facebook</a
-            >
           </div>
         </div>
       </section>
 
       <!-- Section 2: Technologies -->
       <section class="technologies section" id="technologies">
-        <h2>🛠️ Tecnologías que uso</h2>
+        <h2>🛠️ What I play with...</h2>
         <div class="tech-list">
           <span class="tech">🐍 Python</span>
           <span class="tech">⚙️ Golang</span>
@@ -149,42 +156,39 @@
 
       <!-- Section 3: Projects -->
       <section class="projects section" id="projects">
-        <h2>🚀 Proyectos</h2>
+        <h2 class="accent">🚀 Projects</h2>
         <div class="projects-container">
           <div class="project-card">
-            <h3>Proyecto Uno</h3>
+            <h3 class="accent">Music21 Partitura Generator</h3>
             <p>
-              Breve descripción del proyecto uno, resaltando su funcionalidad y
-              las tecnologías utilizadas.
+              A Music21 project that generates musical scores from a set of
+              pitch classes (PC Set) and applies dynamic transpositions.
             </p>
             <a
-              href="https://github.com/tuusuario/proyecto1"
+              href="https://github.com/FredyRN/music_21"
               target="_blank"
               class="btn-project"
               >Ver más</a
             >
           </div>
           <div class="project-card">
-            <h3>Proyecto Dos</h3>
-            <p>
-              Breve descripción del proyecto dos, destacando sus características
-              principales.
-            </p>
+            <h3 class="accent">CI/CD Golang + Docker</h3>
+            <p>CI/CD Test Project for Go (Golang) in Docker Environments</p>
             <a
-              href="https://github.com/tuusuario/proyecto2"
+              href="https://github.com/FredyRN/digital-barp"
               target="_blank"
               class="btn-project"
               >Ver más</a
             >
           </div>
           <div class="project-card">
-            <h3>Proyecto Tres</h3>
+            <h3 class="accent">Simple CRM</h3>
             <p>
-              Breve descripción del proyecto tres, orientado a solucionar
-              problemas específicos.
+              It's a simple application where the Django administrative system
+              is implemented to store basic product and customer information.
             </p>
             <a
-              href="https://github.com/tuusuario/proyecto3"
+              href="https://github.com/FredyRN/clientes_salazar"
               target="_blank"
               class="btn-project"
               >Ver más</a
@@ -196,7 +200,7 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2025 Fredy Rodriguez. All rights reserved.</p>
+      <a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" class="accent">&copy; 2025 Fredy Rodriguez.</a>
     </footer>
 
     <!-- External JavaScript file with defer -->

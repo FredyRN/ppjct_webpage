@@ -1,50 +1,37 @@
-/* styles.css */
-
-/* Reset & Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #2a2a3a);
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-/* Navbar Styles */
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 /* VARIABLES CSS */
 :root {
     --header-height: 3.5rem;
+    --section-height: 65vh;
 
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
+    /* Colors */
+    /* Color mode HSL (hue, saturation, lightness) */
     --black-color: hsl(220, 24%, 12%);
     --black-color-light: hsl(220, 24%, 15%);
     --black-color-lighten: hsl(220, 20%, 18%);
-    --white-color: #fff;
-    --body-color: hsl(220, 100%, 97%);
+    --grey-one: hsl(0, 0%, 20%);
+    --grey-two: hsl(0, 0%, 97%);
+    --white-color: hsl(0, 0%, 100%);
+    --acent-color: hsl(212, 97%, 43%);
+    --body-color: linear-gradient(135deg, hsl(240, 22%, 15%), hsl(240, 16%, 20%));
 
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
+    /* Font and typography */
+    /* .5rem = 8px | 1rem = 16px ... */
     --body-font: "Montserrat", sans-serif;
     --normal-font-size: .938rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-regular: 400;
     --font-semi-bold: 600;
 
-    /*========== z index ==========*/
+    /* z-index */
     --z-tooltip: 10;
     --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/* Responsive typography */
 @media screen and (min-width: 1024px) {
     :root {
         --normal-font-size: 1rem;
@@ -61,13 +48,19 @@ body {
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    background: var(--body-color);
+    color: var(--white-color);
+    line-height: 1.6;
+}
+.accent {
+    color: var(--acent-color);
+    font-style: var(--font-semi-bold);
 }
 
 ul {
     list-style: none;
-    /* Color highlighting when pressed on mobile devices */
     /*-webkit-tap-highlight-color: transparent;*/
+    /* optional: remove tap highlight on mobile */
 }
 
 a {
@@ -86,8 +79,6 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--black-color);
-    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
     z-index: var(--z-fixed);
 }
 
@@ -114,8 +105,8 @@ a {
     align-items: center;
     column-gap: .25rem;
     font-weight: var(--font-semi-bold);
-    /* Color highlighting when pressed on mobile devices */
     /*-webkit-tap-highlight-color: transparent;*/
+    /* optional: remove tap highlight on mobile */
 }
 
 .nav__logo i {
@@ -164,14 +155,12 @@ a {
     }
 
     .nav__list {
-        background-color: var(--black-color);
         padding-top: 1rem;
     }
 }
 
 .nav__link {
     color: var(--white-color);
-    background-color: var(--black-color);
     font-weight: var(--font-semi-bold);
     padding: 1.25rem 1.5rem;
     display: flex;
@@ -187,7 +176,7 @@ a {
 /* Show menu */
 .show-menu {
     opacity: 1;
-    top: 3.5rem;
+    top: var(--header-height);
     pointer-events: initial;
 }
 
@@ -358,13 +347,9 @@ a {
     }
 }
 
-/* Add top padding to avoid content hidden behind fixed navbar */
-body {
-    padding-top: 80px;
-}
-
 /* Section Base Style */
 .section {
+    height: var(--section-height);
     padding: 50px 20px;
     text-align: center;
 }
@@ -400,8 +385,8 @@ body {
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
+    font-weight: var(--font-semi-bold);
+    color: var(--white-color);
     background-color: #24292e;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -409,7 +394,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #0366d6;
+    background-color: var(--acent-color);
     transform: scale(1.05);
 }
 
@@ -433,24 +418,20 @@ body {
     padding: 12px 18px;
     border-radius: 8px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: var(--font-semi-bold);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
 .tech:hover {
     transform: scale(1.1);
-    background-color: #444;
+    background-color: var(--acent-color);
 }
 
 /* Projects Section Styles */
-.projects {
-    background-color: #1e1e2f;
-}
-
 .projects h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .projects-container {
@@ -489,7 +470,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #24292e;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
