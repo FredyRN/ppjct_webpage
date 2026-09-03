@@ -8,7 +8,7 @@
     <title>Fredy Rodriguez - Portfolio</title>
 
     <!-- Meta tags for SEO and Social Media -->
-    <meta name="description" content="Portfolio and personal blog" />
+    <meta name="description" content="Fredy Rodriguez — Software developer (Backend & Automation) con +8 años de experiencia. Python, Go, Rust, n8n, Docker. Construyo APIs, bots de WhatsApp, agentes IA y automatización que ahorran horas. Contrátame en Upwork." />
     <meta
       name="keywords"
       content="HTML, CSS, Web Development, Blog, Personal, Developer, Python, Rust, Admin, Administration, blog personal, developer's blog"
@@ -20,7 +20,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Fredy Rodriguez" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="URL de la imagen" />
+    <meta property="og:image" content="https://fredyrn.com/assets/img/projects/whatsapp-bot.png" />
     <meta property="og:url" content="https://fredyrn.com" />
     <meta
       property="og:description"
@@ -68,6 +68,38 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://fredyrn.com/" />
+
+    <!-- SEO: structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fredy Rodriguez",
+        "jobTitle": "Software Developer — Backend & Automation",
+        "url": "https://fredyrn.com/",
+        "description": "Backend developer and automation specialist with 8+ years building Python, Go, Rust, n8n and Docker solutions. WhatsApp bots, AI agents and process automation.",
+        "knowsAbout": ["Python", "Golang", "Rust", "n8n", "Docker", "PostgreSQL", "Automation", "AI Agents"],
+        "sameAs": [
+          "https://github.com/fredyrn",
+          "https://www.linkedin.com/in/jfrn/",
+          "https://blog.fredyrn.com/"
+        ]
+      }
+    </script>
+
+    <!-- Estilos para secciones de conversión y portafolio -->
+    <style>
+      .project-card img { width: 100%; border-radius: 10px; margin-bottom: 12px; border: 1px solid var(--grey-one); }
+      .project-card video { width: 100%; border-radius: 10px; margin-bottom: 12px; }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+      .badge { display: inline-block; background: var(--black-color-light); border: 1px solid var(--grey-one); color: var(--white-color); padding: 4px 10px; border-radius: 20px; font-size: 13px; margin: 3px; }
+      .hire { text-align: left; }
+      .hire p { color: var(--white-color); }
+      .hire .btn { display: inline-block; }
+    </style>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -91,7 +123,16 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li>
+              <a href="#ai-automation" class="nav__link">AI & Automation</a>
+            </li>
+            <li>
               <a href="https://blog.fredyrn.com/" class="nav__link">Blog</a>
+            </li>
+            <li>
+              <a href="#hire" class="nav__link">Hire me</a>
             </li>
           </ul>
         </div>
@@ -116,7 +157,12 @@
               always seeking new challenges in the tech world.
             </p>
             <p class="accent">projects@fredyrn.com</p>
+            <p>
+              Backend, automatización e IA para negocios: <strong>bots de WhatsApp</strong>,
+              flujos <strong>n8n</strong> y <strong>agentes de IA</strong> que ahorran horas.
+            </p>
           </div>
+          <!-- CONVIERTE: enlaza tu perfil de Upwork y tu WhatsApp (reemplaza el número) -->
           <div class="social-buttons">
             <a href="https://github.com/fredyrn" target="_blank" class="btn"
               >⭐ GitHub</a
@@ -127,6 +173,18 @@
               class="btn"
               >🔗 LinkedIn</a
             >
+            <a
+              href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1"
+              target="_blank"
+              class="btn"
+              >💼 Hire me on Upwork</a
+            >
+            <!-- Reemplaza 573000000000 por tu número -->
+            <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio"
+               target="_blank" class="btn">💬 WhatsApp</a>
+          </div>
+          <div class="cta-row">
+            <a href="#ai-automation" class="btn-project">🤖 Ver proyectos de IA & Automatización →</a>
           </div>
         </div>
       </section>
@@ -193,7 +251,76 @@
           </div>
         </div>
       </section>
+
+      <!-- Section 4: AI & Automation (lo que resuelvo) -->
+      <section class="projects section" id="ai-automation">
+        <h2 class="accent">🤖 AI & Automation</h2>
+        <p class="accent">
+          Soluciones que ya corren en producción — no conceptos.
+        </p>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="assets/img/projects/whatsapp-bot.png" alt="Bot de WhatsApp que cotiza y factura" />
+            <h3 class="accent">Bot WhatsApp → Cotización → Factura</h3>
+            <p>
+              Un bot de n8n que responde precios con catálogo e IVA al instante y
+              genera la <strong>factura en PDF</strong> automáticamente. Sin API keys, probado
+              end-to-end.
+            </p>
+            <span class="badge">n8n</span><span class="badge">WhatsApp API</span><span class="badge">PDF</span>
+            <div class="cta-row">
+              <a href="#hire" class="btn-project">→ Quiero uno igual</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/img/projects/n8n-automation.png" alt="Flujo de automatización n8n" />
+            <h3 class="accent">Automatización n8n</h3>
+            <p>
+              Flujos ETL/ELT, aprobaciones multi-paso, webhooks seguros (HMAC/OAuth2/mTLS)
+              y observabilidad con OpenTelemetry. Desplegados con Docker/Podman.
+            </p>
+            <span class="badge">n8n</span><span class="badge">Docker</span><span class="badge">OpenTelemetry</span>
+            <div class="cta-row">
+              <a href="#hire" class="btn-project">→ Automatiza tu proceso</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/img/projects/factura.png" alt="Factura en PDF generada por el bot" />
+            <h3 class="accent">Agentes de IA + MCP</h3>
+            <p>
+              Agentes que conectan datos de tu negocio con modelos (DeepSeek, Gemini, GPT)
+              y servidores MCP para que cualquier IA trabaje con tu catálogo.
+            </p>
+            <span class="badge">AI Agents</span><span class="badge">MCP</span><span class="badge">LLM failover</span>
+            <div class="cta-row">
+              <a href="#hire" class="btn-project">→ Construye tu agente</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Section 5: Hire me / Contact -->
+    <section class="hero section hire" id="hire">
+      <div class="content">
+        <h2 class="accent">Hablemos de tu proyecto</h2>
+        <p>
+          ¿Tienes una tarea repetitiva que quieres automatizar, un bot de WhatsApp
+          para tu negocio o una API que construir? Te dejo una primera versión
+          funcionando en días. Español e inglés.
+        </p>
+        <div class="social-buttons">
+          <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn">💼 Upwork</a>
+          <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20que%20me%20automatices%20algo" target="_blank" class="btn">💬 WhatsApp</a>
+          <a href="mailto:projects@fredyrn.com" class="btn">✉️ projects@fredyrn.com</a>
+          <a href="https://github.com/fredyrn" target="_blank" class="btn">⭐ GitHub</a>
+          <a href="https://www.linkedin.com/in/jfrn/" target="_blank" class="btn">🔗 LinkedIn</a>
+        </div>
+        <div class="cta-row">
+          <a href="mailto:projects@fredyrn.com?subject=Quiero%20una%20automatizacion" class="btn-project">→ Empieza con una consulta gratuita</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
