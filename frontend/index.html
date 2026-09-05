@@ -182,11 +182,11 @@
           <div class="term">
             <div class="term-bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span></div>
             <div class="term-body">
-              <div class="ln"><span class="c-purple">def</span> <span class="c-cyan">automatizar</span>(negocio):</div>
-              <div class="ln">&nbsp;&nbsp;bot = <span class="c-purple">WhatsAppBot</span>(cotizacion=<span class="c-green">True</span>, factura=<span class="c-green">True</span>)</div>
-              <div class="ln">&nbsp;&nbsp;flujo = <span class="c-purple">n8n</span>.workflow(webhook=seguro, ia=<span class="c-green">failover</span>)</div>
-              <div class="ln">&nbsp;&nbsp;tareas_repetidas = <span class="c-purple">0</span>  <span class="c-purple">#</span> <span class="c-green">ahorradas</span></div>
-              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> bot + flujo + <span class="c-cyan">resultados</span></div>
+              <div class="ln"><span class="c-purple">func</span> <span class="c-cyan">automatizar</span>(n <span class="c-cyan">*Negocio</span>) <span class="c-cyan">Total</span> {</div>
+              <div class="ln">&nbsp;&nbsp;bot := <span class="c-cyan">NewWhatsAppBot</span>(Config{Cotizacion: <span class="c-green">true</span>, Factura: <span class="c-green">true</span>})</div>
+              <div class="ln">&nbsp;&nbsp;flujo := <span class="c-cyan">n8n</span>.Workflow(<span class="c-green">"webhook=seguro"</span>, <span class="c-green">"ia=failover"</span>)</div>
+              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> Total(bot.Run() + flujo.Run()) <span class="c-purple">//</span> <span class="c-green">horas ahorradas</span></div>
+              <div class="ln">}</div>
             </div>
           </div>
           <div class="float-card f1">⚡ n8n · Docker · OpenTelemetry</div>
