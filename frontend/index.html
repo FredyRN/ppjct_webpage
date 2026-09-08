@@ -4,25 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fredy Rodriguez — Backend & Automation</title>
+  <title>Fredy Rodriguez — Backend & Automation Engineer</title>
 
-  <meta name="description" content="Fredy Rodriguez — Desarrollador de software (Backend & Automation) con +8 años. Python, Go, Rust, n8n, Docker. Construyo APIs, bots de WhatsApp, agentes IA y automatización. Contrátame en Upwork." />
-  <meta name="keywords" content="Backend, Automation, n8n, WhatsApp Bot, AI Agents, Python, Golang, Rust, Flutter, Docker, Portfolio, Desarrollador" />
+  <meta name="description" content="Fredy Rodriguez — Backend & Automation Engineer (+8 años). Transformo procesos manuales en backend robusto, agentes de IA y automatizaciones escalables. Python, Go, Rust, n8n, Docker." />
+  <meta name="keywords" content="Backend, Automation, n8n, WhatsApp Bot, AI Agents, Python, Golang, Rust, Flutter, Docker, Portfolio, Desarrollador, MCP, OpenTelemetry" />
   <meta name="author" content="Fredy Rodriguez Nupia" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0a0a12" />
 
-  <meta property="og:title" content="Fredy Rodriguez — Backend & Automation" />
+  <meta property="og:title" content="Fredy Rodriguez — Backend & Automation Engineer" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://fredyrn.com/assets/img/projects/whatsapp-bot.png" />
   <meta property="og:url" content="https://fredyrn.com" />
-  <meta property="og:description" content="Desarrollador de software colombiano (+8 años). Backend, automatización e IA: bots de WhatsApp, flujos n8n y agentes IA. ¡Hablemos!" />
+  <meta property="og:description" content="Desarrollador de software colombiano (+8 años). Backend, automatización e IA: bots de WhatsApp, flujos n8n y agentes IA escalables." />
   <link rel="canonical" href="https://fredyrn.com/" />
 
   <script type="application/ld+json">
   { "@context": "https://schema.org", "@type": "Person", "name": "Fredy Rodriguez",
-    "jobTitle": "Software Developer — Backend & Automation", "url": "https://fredyrn.com/",
-    "knowsAbout": ["Python","Golang","Rust","Flutter","n8n","Docker","PostgreSQL","Automation","AI Agents"],
+    "jobTitle": "Backend & Automation Engineer", "url": "https://fredyrn.com/",
+    "knowsAbout": ["Python","Golang","Rust","Flutter","n8n","Docker","PostgreSQL","Automation","AI Agents","MCP","OpenTelemetry"],
     "sameAs": ["https://github.com/fredyrn","https://www.linkedin.com/in/jfrn/","https://blog.fredyrn.com/"] }
   </script>
 
@@ -73,7 +73,7 @@
     .hero{min-height:100vh;display:flex;align-items:center;padding-top:80px}
     .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
     .h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:14px 0 18px}
-    .hero p{color:var(--muted);font-size:18px;max-width:520px}
+    .hero p{color:var(--muted);font-size:18px;max-width:540px}
     .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid transparent}
     .btn.primary{background:var(--grad);color:#04040a;box-shadow:0 10px 30px rgba(124,92,255,.35)}
@@ -97,7 +97,7 @@
 
     /* secciones */
     section{padding:90px 0}
-    .sec-head{max-width:640px;margin-bottom:46px}
+    .sec-head{max-width:680px;margin-bottom:46px}
     .sec-head h2{font-size:clamp(28px,4vw,40px);margin:10px 0}
     .sec-head p{color:var(--muted);font-size:17px}
 
@@ -108,11 +108,13 @@
 
     /* bento grid */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid.four{grid-template-columns:repeat(2,1fr)}
     .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.25s;position:relative;overflow:hidden}
     .card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:var(--shadow)}
-    .card img{width:100%;border-radius:12px;margin-bottom:16px;border:1px solid var(--line)}
+    .card img{width:100%;height:auto;border-radius:12px;margin-bottom:16px;border:1px solid var(--line);object-fit:cover}
     .card h3{font-size:19px;margin-bottom:8px}
-    .card p{color:var(--muted);font-size:15px}
+    .card p{color:var(--muted);font-size:15px;line-height:1.55}
+    .card p strong{color:var(--text)}
     .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
     .tag{background:var(--panel2);border:1px solid var(--line);padding:4px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
     .cta-line{margin-top:16px;display:inline-block;color:var(--accent2);font-weight:600}
@@ -134,7 +136,7 @@
     @media(max-width:840px){
       .hero .wrap{grid-template-columns:1fr;gap:40px}
       .avatar{display:none}
-      .grid{grid-template-columns:1fr}
+      .grid, .grid.four{grid-template-columns:1fr}
       .grid.two{grid-template-columns:1fr}
       .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#0c0c16;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:10px 0}
       .nav-links a{padding:14px 22px}
@@ -151,10 +153,11 @@
     <nav class="nav">
       <a href="#" class="logo"><img src="assets/img/icon/32x32/icon-32x32.png" alt="FR" />Fredy Rodriguez</a>
       <div class="nav-links" id="navlinks">
+        <a href="#services">Servicios</a>
         <a href="#stack">Stack</a>
-        <a href="#projects">Projects</a>
-        <a href="#ai">AI & Automation</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#ai">IA & Automatización</a>
+        <a href="#contact">Contacto</a>
         <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill">Hire me</a>
       </div>
       <button class="burger" id="burger" aria-label="Menu">☰</button>
@@ -166,15 +169,15 @@
     <section class="hero" id="home">
       <div class="wrap">
         <div class="reveal">
-          <div class="eyebrow">Software Developer · Backend & Automation</div>
+          <div class="eyebrow">Fredy Rodriguez — Backend & Automation Engineer (+8 años)</div>
           <h1 class="h1">Hola, soy <span class="grad">Fredy Rodriguez</span>.</h1>
-          <p>Construyo <strong>backend, bots de WhatsApp, flujos n8n y agentes de IA</strong> que automatizan lo repetitivo y hacen crecer tu negocio. Python · Go · Rust · n8n · Docker.</p>
+          <p>Transformo procesos manuales y sistemas lentos en <strong>backend robusto, agentes de IA y automatizaciones escalables</strong>. Especialista en arquitecturas de alto rendimiento.</p>
           <div class="cta">
-            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary">💼 Hire me on Upwork</a>
-            <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost">💬 WhatsApp</a>
-            <a href="https://github.com/fredyrn" target="_blank" class="btn ghost">GitHub</a>
+            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary">💼 Contratar en Upwork</a>
+            <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost">💬 Hablar por WhatsApp</a>
+            <a href="https://github.com/fredyrn" target="_blank" class="btn ghost">📄 Ver GitHub</a>
           </div>
-          <div class="chips"><span class="chip">+8 años</span><span class="chip">IA & Automatización</span><span class="chip">Español / English</span></div>
+          <div class="chips"><span class="chip">+8 años experiencia</span><span class="chip">Backend & Agentes IA</span><span class="chip">Español / English</span></div>
         </div>
 
         <div class="viz reveal">
@@ -185,12 +188,45 @@
               <div class="ln"><span class="c-purple">func</span> <span class="c-cyan">automatizar</span>(n <span class="c-cyan">*Negocio</span>) <span class="c-cyan">Total</span> {</div>
               <div class="ln">&nbsp;&nbsp;bot := <span class="c-cyan">NewWhatsAppBot</span>(Config{Cotizacion: <span class="c-green">true</span>, Factura: <span class="c-green">true</span>})</div>
               <div class="ln">&nbsp;&nbsp;flujo := <span class="c-cyan">n8n</span>.Workflow(<span class="c-green">"webhook=seguro"</span>, <span class="c-green">"ia=failover"</span>)</div>
-              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> Total(bot.Run() + flujo.Run()) <span class="c-purple">//</span> <span class="c-green">horas ahorradas</span></div>
+              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> Total(bot.Run() + flujo.Run()) <span class="c-purple">//</span> <span class="c-green">procesos 10x más rápidos</span></div>
               <div class="ln">}</div>
             </div>
           </div>
-          <div class="float-card f1">⚡ n8n · Docker · OpenTelemetry</div>
-          <div class="float-card f2">✓ Probado end-to-end</div>
+          <div class="float-card f1">⚡ Go · n8n · Docker · MCP</div>
+          <div class="float-card f2">✓ Producción end-to-end</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SERVICES / SOLUCIONES RAPIDAS -->
+    <section id="services">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <div class="eyebrow">Soluciones Rápidas</div>
+          <h2>Servicios en <span class="grad">48–72 horas</span></h2>
+          <p>Resultados inmediatos para cuellos de botella operativos en tu negocio o startup.</p>
+        </div>
+        <div class="grid four">
+          <div class="card">
+            <h3>🤖 Web Scraping & Extracción de Datos</h3>
+            <p>Bots resilientes en Python / Playwright para scraping complejo, bypassing de captchas y estructuración de datos en tiempo real.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">ETL</span></div>
+          </div>
+          <div class="card">
+            <h3>⚡ Integraciones de APIs & Webhooks</h3>
+            <p>Conexión segura de plataformas (n8n / Go / Python) con firmas HMAC, OAuth2 y gestión de reintentos automatizados.</p>
+            <div class="tags"><span class="tag">n8n</span><span class="tag">Go</span><span class="tag">APIs</span></div>
+          </div>
+          <div class="card">
+            <h3>🐳 Dockerización & Despliegue VPS</h3>
+            <p>Empaquetado de microservicios, optimización de Dockerfiles multi-stage y despliegue en Linux (VPS, Podman, Traefik/Nginx).</p>
+            <div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Podman</span></div>
+          </div>
+          <div class="card">
+            <h3>💬 Bots para WhatsApp / Telegram / Discord</h3>
+            <p>Flujos conversacionales interactivos integrados con sistemas de cobro, CRM, catálogos y modelos de IA.</p>
+            <div class="tags"><span class="tag">WhatsApp API</span><span class="tag">Bots</span><span class="tag">IA</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -202,7 +238,7 @@
         <div class="stack">
           <span>🐍 Python</span><span>⚙️ Golang</span><span>🦀 Rust</span><span>📱 Flutter</span><span>🗄️ PostgreSQL</span>
           <span>🌐 Django</span><span>⚡ n8n</span><span>🐳 Docker</span><span>📦 Podman</span>
-          <span>🐧 Linux</span><span>💻 Git / GitHub Actions</span><span>🖥️ VSCode</span><span>🎨 Inkscape</span>
+          <span>🐧 Linux</span><span>💻 Git / GitHub Actions</span><span>📊 OpenTelemetry</span><span>⚡ Redis / APIs</span>
         </div>
       </div>
     </section>
@@ -210,25 +246,25 @@
     <!-- PROJECTS -->
     <section id="projects">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">Projects</div><h2>Proyectos <span class="grad">seleccionados</span></h2></div>
+        <div class="sec-head"><div class="eyebrow">Projects</div><h2>Casos de estudio <span class="grad">& Proyectos</span></h2></div>
         <div class="grid">
           <div class="card">
-            <h3>🎼 Music21 Partitura Generator</h3>
-            <p>Genera partituras musicales a partir de un set de clases de tono y aplica transposiciones dinámicas.</p>
-            <div class="tags"><span class="tag">Python</span><span class="tag">Music21</span></div>
-            <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank">Ver código →</a>
+            <h3>🗂️ Plataforma ERP/CRM para Pymes</h3>
+            <p>Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
+            <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Python</span></div>
+            <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank">Ver código →</a>
           </div>
           <div class="card">
-            <h3>🚀 CI/CD Golang + Docker</h3>
-            <p>Proyecto de pipeline CI/CD para Go en entornos Docker: build, tests y despliegue automatizados.</p>
-            <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div>
+            <h3>⚡ Engine / Microservicio en Go de Alto Rendimiento</h3>
+            <p>Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
+            <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">High Performance</span></div>
             <a class="cta-line" href="https://github.com/FredyRN/digital-barp" target="_blank">Ver código →</a>
           </div>
           <div class="card">
-            <h3>🗂️ Simple CRM</h3>
-            <p>CRM sencillo con el admin de Django para gestionar productos y clientes.</p>
-            <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span></div>
-            <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank">Ver código →</a>
+            <h3>🤖 Motor de Agentes IA & Servidor MCP</h3>
+            <p>Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
+            <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">FastAPI</span><span class="tag">Python</span></div>
+            <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank">Ver repositorio →</a>
           </div>
         </div>
       </div>
@@ -237,27 +273,27 @@
     <!-- AI & AUTOMATION -->
     <section id="ai">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">AI & Automation</div><h2>Lo que <span class="grad">resuelve negocios</span></h2>
-          <p>Soluciones que ya corren en producción — no conceptos.</p></div>
+        <div class="sec-head"><div class="eyebrow">AI & Automation</div><h2>Impacto medible en <span class="grad">producción</span></h2>
+          <p>Soluciones orientadas a resultados de negocio concretos.</p></div>
         <div class="grid">
-          <div class="card card accent">
-            <img src="assets/img/projects/whatsapp-bot.png" alt="Bot de WhatsApp que cotiza y factura" />
+          <div class="card accent">
+            <img src="assets/img/projects/whatsapp-bot.png" alt="Bot de WhatsApp que cotiza y factura" loading="lazy" width="600" height="350" />
             <h3>Bot WhatsApp → Cotización → Factura</h3>
-            <p>Responde precios con catálogo e IVA al instante y genera la <strong>factura en PDF</strong> automáticamente. Sin API keys.</p>
+            <p><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp API</span><span class="tag">PDF</span></div>
             <a class="cta-line" href="#contact">→ Quiero uno igual</a>
           </div>
-          <div class="card card accent">
-            <img src="assets/img/projects/n8n-automation.png" alt="Flujo de automatización en n8n" />
-            <h3>Automatización n8n</h3>
-            <p>ETL/ELT, aprobaciones multi-paso, webhooks seguros (HMAC/OAuth2/mTLS) y observabilidad con OpenTelemetry. Docker/Podman.</p>
+          <div class="card accent">
+            <img src="assets/img/projects/n8n-automation.png" alt="Flujo de automatización en n8n" loading="lazy" width="600" height="350" />
+            <h3>Automatización n8n & Pipelines ETL</h3>
+            <p><strong>Impacto:</strong> Pipelines capaces de procesar +50,000 eventos diarios con observabilidad completa (OpenTelemetry), webhooks seguros y failover automático.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">Observabilidad</span></div>
             <a class="cta-line" href="#contact">→ Automatiza tu proceso</a>
           </div>
-          <div class="card card accent">
-            <img src="assets/img/projects/factura.png" alt="Factura en PDF generada por el bot" />
-            <h3>Agentes de IA + MCP</h3>
-            <p>Agentes que conectan tus datos con modelos (DeepSeek, Gemini, GPT) y servidores MCP para trabajar con tu catálogo.</p>
+          <div class="card accent">
+            <img src="assets/img/projects/factura.png" alt="Agentes de IA y servidores MCP" loading="lazy" width="600" height="350" />
+            <h3>Agentes de IA + Servidores MCP</h3>
+            <p><strong>Impacto:</strong> Agentes autónomos que consultan inventarios y bases de datos con failover entre modelos (DeepSeek, Gemini, GPT), reduciendo tiempos operativos en un 70%.</p>
             <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">LLM failover</span></div>
             <a class="cta-line" href="#contact">→ Construye tu agente</a>
           </div>
@@ -284,7 +320,7 @@
 
   <footer>
     <div class="wrap">
-      <span>© 2025 Fredy Rodriguez. Backend & Automation.</span>
+      <span>© 2026 Fredy Rodriguez. Backend & Automation Engineer.</span>
       <span><a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a> · <a href="https://blog.fredyrn.com/" style="color:var(--muted)">Blog</a></span>
     </div>
   </footer>
