@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fredy Rodriguez — Backend & Automation Engineer</title>
+  <title data-i18n="pageTitle">Fredy Rodriguez — Backend & Automation Engineer</title>
 
   <meta name="description" content="Fredy Rodriguez — Backend & Automation Engineer (+8 años). Transformo procesos manuales en backend robusto, agentes de IA y automatizaciones escalables. Python, Go, Rust, n8n, Docker." />
   <meta name="keywords" content="Backend, Automation, n8n, WhatsApp Bot, AI Agents, Python, Golang, Rust, Flutter, Docker, Portfolio, Desarrollador, MCP, OpenTelemetry" />
@@ -63,10 +63,13 @@
     header{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);background:rgba(10,10,18,.6);border-bottom:1px solid var(--line)}
     .nav{max-width:1150px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
     .logo{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk';font-weight:700;font-size:19px}
-    .logo img{width:34px;height:34px;border-radius:9px}
+    .logo img{width:34px;height:34px;border-radius:999px}
+    .nav-right{display:flex;align-items:center;gap:16px}
     .nav-links{display:flex;align-items:center;gap:26px;font-size:15px;color:var(--muted)}
     .nav-links a:hover{color:var(--text)}
     .pill{color:#fff!important;background:var(--grad);padding:9px 18px;border-radius:999px;font-weight:600}
+    .lang-btn{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+    .lang-btn:hover{background:var(--panel2);border-color:var(--accent)}
     .burger{display:none;font-size:22px;background:none;border:none;color:var(--text);cursor:pointer}
 
     /* hero */
@@ -152,15 +155,18 @@
   <header>
     <nav class="nav">
       <a href="#" class="logo"><img src="assets/img/icon/32x32/icon-32x32.png" alt="FR" />Fredy Rodriguez</a>
-      <div class="nav-links" id="navlinks">
-        <a href="#services">Servicios</a>
-        <a href="#stack">Stack</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#ai">IA & Automatización</a>
-        <a href="#contact">Contacto</a>
-        <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill">Hire me</a>
+      <div class="nav-right">
+        <div class="nav-links" id="navlinks">
+          <a href="#services" data-i18n="navServices">Servicios</a>
+          <a href="#stack" data-i18n="navStack">Stack</a>
+          <a href="#projects" data-i18n="navProjects">Proyectos</a>
+          <a href="#ai" data-i18n="navAI">IA & Automatización</a>
+          <a href="#contact" data-i18n="navContact">Contacto</a>
+          <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill" data-i18n="navHire">Hire me</a>
+        </div>
+        <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma">🌐 EN</button>
+        <button class="burger" id="burger" aria-label="Menu">☰</button>
       </div>
-      <button class="burger" id="burger" aria-label="Menu">☰</button>
     </nav>
   </header>
 
@@ -169,15 +175,19 @@
     <section class="hero" id="home">
       <div class="wrap">
         <div class="reveal">
-          <div class="eyebrow">Fredy Rodriguez — Backend & Automation Engineer (+8 años)</div>
-          <h1 class="h1">Hola, soy <span class="grad">Fredy Rodriguez</span>.</h1>
-          <p>Transformo procesos manuales y sistemas lentos en <strong>backend robusto, agentes de IA y automatizaciones escalables</strong>. Especialista en arquitecturas de alto rendimiento.</p>
+          <div class="eyebrow" data-i18n="heroEyebrow">Fredy Rodriguez — Backend & Automation Engineer (+8 años)</div>
+          <h1 class="h1" data-i18n="heroTitle">Hola, soy <span class="grad">Fredy Rodriguez</span>.</h1>
+          <p data-i18n="heroDesc">Transformo procesos manuales y sistemas lentos en <strong>backend robusto, agentes de IA y automatizaciones escalables</strong>. Especialista en arquitecturas de alto rendimiento.</p>
           <div class="cta">
-            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary">💼 Contratar en Upwork</a>
-            <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost">💬 Hablar por WhatsApp</a>
-            <a href="https://github.com/fredyrn" target="_blank" class="btn ghost">📄 Ver GitHub</a>
+            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary" data-i18n="heroBtnUpwork">💼 Contratar en Upwork</a>
+            <a id="wa-btn-hero" href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost" data-i18n="heroBtnWhatsapp">💬 Hablar por WhatsApp</a>
+            <a href="https://github.com/fredyrn" target="_blank" class="btn ghost" data-i18n="heroBtnGithub">📄 Ver GitHub</a>
           </div>
-          <div class="chips"><span class="chip">+8 años experiencia</span><span class="chip">Backend & Agentes IA</span><span class="chip">Español / English</span></div>
+          <div class="chips">
+            <span class="chip" data-i18n="heroChip1">+8 años experiencia</span>
+            <span class="chip" data-i18n="heroChip2">Backend & Agentes IA</span>
+            <span class="chip" data-i18n="heroChip3">Español / English</span>
+          </div>
         </div>
 
         <div class="viz reveal">
@@ -188,12 +198,12 @@
               <div class="ln"><span class="c-purple">func</span> <span class="c-cyan">automatizar</span>(n <span class="c-cyan">*Negocio</span>) <span class="c-cyan">Total</span> {</div>
               <div class="ln">&nbsp;&nbsp;bot := <span class="c-cyan">NewWhatsAppBot</span>(Config{Cotizacion: <span class="c-green">true</span>, Factura: <span class="c-green">true</span>})</div>
               <div class="ln">&nbsp;&nbsp;flujo := <span class="c-cyan">n8n</span>.Workflow(<span class="c-green">"webhook=seguro"</span>, <span class="c-green">"ia=failover"</span>)</div>
-              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> Total(bot.Run() + flujo.Run()) <span class="c-purple">//</span> <span class="c-green">procesos 10x más rápidos</span></div>
+              <div class="ln">&nbsp;&nbsp;<span class="c-purple">return</span> Total(bot.Run() + flujo.Run()) <span class="c-purple">//</span> <span class="c-green" data-i18n="termComment">procesos 10x más rápidos</span></div>
               <div class="ln">}</div>
             </div>
           </div>
           <div class="float-card f1">⚡ Go · n8n · Docker · MCP</div>
-          <div class="float-card f2">✓ Producción end-to-end</div>
+          <div class="float-card f2" data-i18n="cardF2">✓ Producción end-to-end</div>
         </div>
       </div>
     </section>
@@ -202,29 +212,29 @@
     <section id="services">
       <div class="wrap reveal">
         <div class="sec-head">
-          <div class="eyebrow">Soluciones Rápidas</div>
-          <h2>Servicios en <span class="grad">48–72 horas</span></h2>
-          <p>Resultados inmediatos para cuellos de botella operativos en tu negocio o startup.</p>
+          <div class="eyebrow" data-i18n="servicesEyebrow">Soluciones Rápidas</div>
+          <h2 data-i18n="servicesTitle">Servicios en <span class="grad">48–72 horas</span></h2>
+          <p data-i18n="servicesDesc">Resultados inmediatos para cuellos de botella operativos en tu negocio o startup.</p>
         </div>
         <div class="grid four">
           <div class="card">
-            <h3>🤖 Web Scraping & Extracción de Datos</h3>
-            <p>Bots resilientes en Python / Playwright para scraping complejo, bypassing de captchas y estructuración de datos en tiempo real.</p>
+            <h3 data-i18n="srv1Title">🤖 Web Scraping & Extracción de Datos</h3>
+            <p data-i18n="srv1Desc">Bots resilientes en Python / Playwright para scraping complejo, bypassing de captchas y estructuración de datos en tiempo real.</p>
             <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">ETL</span></div>
           </div>
           <div class="card">
-            <h3>⚡ Integraciones de APIs & Webhooks</h3>
-            <p>Conexión segura de plataformas (n8n / Go / Python) con firmas HMAC, OAuth2 y gestión de reintentos automatizados.</p>
+            <h3 data-i18n="srv2Title">⚡ Integraciones de APIs & Webhooks</h3>
+            <p data-i18n="srv2Desc">Conexión segura de plataformas (n8n / Go / Python) con firmas HMAC, OAuth2 y gestión de reintentos automatizados.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">Go</span><span class="tag">APIs</span></div>
           </div>
           <div class="card">
-            <h3>🐳 Dockerización & Despliegue VPS</h3>
-            <p>Empaquetado de microservicios, optimización de Dockerfiles multi-stage y despliegue en Linux (VPS, Podman, Traefik/Nginx).</p>
+            <h3 data-i18n="srv3Title">🐳 Dockerización & Despliegue VPS</h3>
+            <p data-i18n="srv3Desc">Empaquetado de microservicios, optimización de Dockerfiles multi-stage y despliegue en Linux (VPS, Podman, Traefik/Nginx).</p>
             <div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Podman</span></div>
           </div>
           <div class="card">
-            <h3>💬 Bots para WhatsApp / Telegram / Discord</h3>
-            <p>Flujos conversacionales interactivos integrados con sistemas de cobro, CRM, catálogos y modelos de IA.</p>
+            <h3 data-i18n="srv4Title">💬 Bots para WhatsApp / Telegram / Discord</h3>
+            <p data-i18n="srv4Desc">Flujos conversacionales interactivos integrados con sistemas de cobro, CRM, catálogos y modelos de IA.</p>
             <div class="tags"><span class="tag">WhatsApp API</span><span class="tag">Bots</span><span class="tag">IA</span></div>
           </div>
         </div>
@@ -234,7 +244,10 @@
     <!-- STACK -->
     <section id="stack">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">Stack</div><h2>Con lo que <span class="grad">trabajo a diario</span></h2></div>
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="stackEyebrow">Stack</div>
+          <h2 data-i18n="stackTitle">Con lo que <span class="grad">trabajo a diario</span></h2>
+        </div>
         <div class="stack">
           <span>🐍 Python</span><span>⚙️ Golang</span><span>🦀 Rust</span><span>📱 Flutter</span><span>🗄️ PostgreSQL</span>
           <span>🌐 Django</span><span>⚡ n8n</span><span>🐳 Docker</span><span>📦 Podman</span>
@@ -246,25 +259,28 @@
     <!-- PROJECTS -->
     <section id="projects">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">Projects</div><h2>Casos de estudio <span class="grad">& Proyectos</span></h2></div>
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="projectsEyebrow">Projects</div>
+          <h2 data-i18n="projectsTitle">Casos de estudio <span class="grad">& Proyectos</span></h2>
+        </div>
         <div class="grid">
           <div class="card">
-            <h3>🗂️ Plataforma ERP/CRM para Pymes</h3>
-            <p>Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
+            <h3 data-i18n="prj1Title">🗂️ Plataforma ERP/CRM para Pymes</h3>
+            <p data-i18n="prj1Desc">Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
             <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Python</span></div>
-            <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank">Ver código →</a>
+            <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank" data-i18n="prj1Cta">Ver código →</a>
           </div>
           <div class="card">
-            <h3>⚡ Engine / Microservicio en Go de Alto Rendimiento</h3>
-            <p>Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
+            <h3 data-i18n="prj2Title">⚡ Engine / Microservicio en Go de Alto Rendimiento</h3>
+            <p data-i18n="prj2Desc">Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
             <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">High Performance</span></div>
-            <a class="cta-line" href="https://github.com/FredyRN/digital-barp" target="_blank">Ver código →</a>
+            <a class="cta-line" href="https://github.com/FredyRN/digital-barp" target="_blank" data-i18n="prj2Cta">Ver código →</a>
           </div>
           <div class="card">
-            <h3>🤖 Motor de Agentes IA & Servidor MCP</h3>
-            <p>Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
+            <h3 data-i18n="prj3Title">🤖 Motor de Agentes IA & Servidor MCP</h3>
+            <p data-i18n="prj3Desc">Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
             <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">FastAPI</span><span class="tag">Python</span></div>
-            <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank">Ver repositorio →</a>
+            <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank" data-i18n="prj3Cta">Ver repositorio →</a>
           </div>
         </div>
       </div>
@@ -273,29 +289,32 @@
     <!-- AI & AUTOMATION -->
     <section id="ai">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">AI & Automation</div><h2>Impacto medible en <span class="grad">producción</span></h2>
-          <p>Soluciones orientadas a resultados de negocio concretos.</p></div>
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="aiEyebrow">AI & Automation</div>
+          <h2 data-i18n="aiTitle">Impacto medible en <span class="grad">producción</span></h2>
+          <p data-i18n="aiDesc">Soluciones orientadas a resultados de negocio concretos.</p>
+        </div>
         <div class="grid">
           <div class="card accent">
             <img src="assets/img/projects/whatsapp-bot.png" alt="Bot de WhatsApp que cotiza y factura" loading="lazy" width="600" height="350" />
-            <h3>Bot WhatsApp → Cotización → Factura</h3>
-            <p><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
+            <h3 data-i18n="ai1Title">Bot WhatsApp → Cotización → Factura</h3>
+            <p data-i18n="ai1Impact"><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp API</span><span class="tag">PDF</span></div>
-            <a class="cta-line" href="#contact">→ Quiero uno igual</a>
+            <a class="cta-line" href="#contact" data-i18n="ai1Cta">→ Quiero uno igual</a>
           </div>
           <div class="card accent">
             <img src="assets/img/projects/n8n-automation.png" alt="Flujo de automatización en n8n" loading="lazy" width="600" height="350" />
-            <h3>Automatización n8n & Pipelines ETL</h3>
-            <p><strong>Impacto:</strong> Pipelines capaces de procesar +50,000 eventos diarios con observabilidad completa (OpenTelemetry), webhooks seguros y failover automático.</p>
+            <h3 data-i18n="ai2Title">Automatización n8n & Pipelines ETL</h3>
+            <p data-i18n="ai2Impact"><strong>Impacto:</strong> Pipelines capaces de procesar +50,000 eventos diarios con observabilidad completa (OpenTelemetry), webhooks seguros y failover automático.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">Observabilidad</span></div>
-            <a class="cta-line" href="#contact">→ Automatiza tu proceso</a>
+            <a class="cta-line" href="#contact" data-i18n="ai2Cta">→ Automatiza tu proceso</a>
           </div>
           <div class="card accent">
             <img src="assets/img/projects/factura.png" alt="Agentes de IA y servidores MCP" loading="lazy" width="600" height="350" />
-            <h3>Agentes de IA + Servidores MCP</h3>
-            <p><strong>Impacto:</strong> Agentes autónomos que consultan inventarios y bases de datos con failover entre modelos (DeepSeek, Gemini, GPT), reduciendo tiempos operativos en un 70%.</p>
+            <h3 data-i18n="ai3Title">Agentes de IA + Servidores MCP</h3>
+            <p data-i18n="ai3Impact"><strong>Impacto:</strong> Agentes autónomos que consultan inventarios y bases de datos con failover entre modelos (DeepSeek, Gemini, GPT), reduciendo tiempos operativos en un 70%.</p>
             <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">LLM failover</span></div>
-            <a class="cta-line" href="#contact">→ Construye tu agente</a>
+            <a class="cta-line" href="#contact" data-i18n="ai3Cta">→ Construye tu agente</a>
           </div>
         </div>
       </div>
@@ -305,13 +324,13 @@
     <section id="contact">
       <div class="wrap reveal">
         <div class="cta-band">
-          <h2>¿Tienes algo que <span class="grad">automatizar</span>?</h2>
-          <p>Te dejo una primera versión funcionando en días. Hablo español e inglés, respondo rápido.</p>
+          <h2 data-i18n="contactTitle">¿Tienes algo que <span class="grad">automatizar</span>?</h2>
+          <p data-i18n="contactDesc">Te dejo una primera versión funcionando en días. Hablo español e inglés, respondo rápido.</p>
           <div class="cta" style="justify-content:center">
-            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary">💼 Upwork</a>
-            <a href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20que%20me%20automatices%20algo" target="_blank" class="btn ghost">💬 WhatsApp</a>
-            <a href="mailto:projects@fredyrn.com" class="btn ghost">✉️ Email</a>
-            <a href="https://www.linkedin.com/in/jfrn/" target="_blank" class="btn ghost">🔗 LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="btn primary" data-i18n="contactUpwork">💼 Upwork</a>
+            <a id="wa-btn-contact" href="https://wa.me/573000000000?text=Hola%20Fredy,%20quiero%20que%20me%20automatices%20algo" target="_blank" class="btn ghost" data-i18n="contactWhatsapp">💬 WhatsApp</a>
+            <a href="mailto:projects@fredyrn.com" class="btn ghost" data-i18n="contactEmail">✉️ Email</a>
+            <a href="https://www.linkedin.com/in/jfrn/" target="_blank" class="btn ghost" data-i18n="contactLinkedin">🔗 LinkedIn</a>
           </div>
         </div>
       </div>
@@ -320,11 +339,12 @@
 
   <footer>
     <div class="wrap">
-      <span>© 2026 Fredy Rodriguez. Backend & Automation Engineer.</span>
+      <span data-i18n="footerCopy">© 2026 Fredy Rodriguez. Backend & Automation Engineer.</span>
       <span><a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a> · <a href="https://blog.fredyrn.com/" style="color:var(--muted)">Blog</a></span>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script>
     // Menú móvil
     const burger = document.getElementById('burger');
