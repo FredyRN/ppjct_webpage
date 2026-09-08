@@ -106,8 +106,9 @@
 
     /* stack */
     .stack{display:flex;flex-wrap:wrap;gap:12px}
-    .stack span{background:var(--panel);border:1px solid var(--line);padding:12px 20px;border-radius:14px;font-weight:600;transition:.2s}
+    .stack span{background:var(--panel);border:1px solid var(--line);padding:10px 18px;border-radius:14px;font-weight:600;transition:.2s;display:inline-flex;align-items:center;gap:10px}
     .stack span:hover{background:var(--panel2);transform:translateY(-3px);border-color:var(--accent)}
+    .stack span img{width:20px;height:20px;object-fit:contain}
 
     /* bento grid */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -249,9 +250,19 @@
           <h2 data-i18n="stackTitle">Con lo que <span class="grad">trabajo a diario</span></h2>
         </div>
         <div class="stack">
-          <span>🐍 Python</span><span>⚙️ Golang</span><span>🦀 Rust</span><span>📱 Flutter</span><span>🗄️ PostgreSQL</span>
-          <span>🌐 Django</span><span>⚡ n8n</span><span>🐳 Docker</span><span>📦 Podman</span>
-          <span>🐧 Linux</span><span>💻 Git / GitHub Actions</span><span>📊 OpenTelemetry</span><span>⚡ Redis / APIs</span>
+          <span><img src="https://cdn.simpleicons.org/python" alt="Python" /> Python</span>
+          <span><img src="https://cdn.simpleicons.org/go" alt="Golang" /> Golang</span>
+          <span><img src="https://cdn.simpleicons.org/rust/white" alt="Rust" /> Rust</span>
+          <span><img src="https://cdn.simpleicons.org/flutter" alt="Flutter" /> Flutter</span>
+          <span><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" /> PostgreSQL</span>
+          <span><img src="https://cdn.simpleicons.org/django/44B78B" alt="Django" /> Django</span>
+          <span><img src="https://cdn.simpleicons.org/n8n" alt="n8n" /> n8n</span>
+          <span><img src="https://cdn.simpleicons.org/docker" alt="Docker" /> Docker</span>
+          <span><img src="https://cdn.simpleicons.org/podman" alt="Podman" /> Podman</span>
+          <span><img src="https://cdn.simpleicons.org/linux/white" alt="Linux" /> Linux</span>
+          <span><img src="https://cdn.simpleicons.org/git" alt="Git" /> Git / GitHub Actions</span>
+          <span><img src="https://cdn.simpleicons.org/opentelemetry" alt="OpenTelemetry" /> OpenTelemetry</span>
+          <span><img src="https://cdn.simpleicons.org/redis" alt="Redis" /> Redis / APIs</span>
         </div>
       </div>
     </section>
