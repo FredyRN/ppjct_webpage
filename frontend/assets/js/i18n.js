@@ -7,6 +7,7 @@ const translations = {
     navProjects: "Proyectos",
     navAI: "IA & Automatización",
     navContact: "Contacto",
+    navAbout: "Sobre mí",
     navHire: "Hire me",
     heroEyebrow: "Fredy Rodriguez — Backend & Automation Engineer (+8 años)",
     heroTitle: "Hola, soy <span class=\"grad\">Fredy Rodriguez</span>.",
@@ -71,6 +72,7 @@ const translations = {
     navProjects: "Projects",
     navAI: "AI & Automation",
     navContact: "Contact",
+    navAbout: "About",
     navHire: "Hire me",
     heroEyebrow: "Fredy Rodriguez — Backend & Automation Engineer (+8 yrs)",
     heroTitle: "Hi, I'm <span class=\"grad\">Fredy Rodriguez</span>.",
@@ -129,6 +131,9 @@ const translations = {
   }
 };
 
+// Contact number used by the WhatsApp buttons (single source of truth).
+const WHATSAPP_NUMBER = "573173136585";
+
 function getPreferredLanguage() {
   const saved = localStorage.getItem('lang');
   if (saved && (saved === 'es' || saved === 'en')) return saved;
@@ -170,8 +175,8 @@ function setLanguage(lang) {
     ? encodeURIComponent("Hola Fredy, quiero automatizar mi negocio")
     : encodeURIComponent("Hi Fredy, I want to automate my business");
 
-  if (waBtnHero) waBtnHero.href = `https://wa.me/573000000000?text=${waText}`;
-  if (waBtnContact) waBtnContact.href = `https://wa.me/573000000000?text=${waText}`;
+  if (waBtnHero) waBtnHero.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
+  if (waBtnContact) waBtnContact.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,39 @@
+# Fredy Rodriguez
+
+> Backend & automation engineer based in Neiva, Colombia. Turns manual processes into robust backend services, AI agents and scalable automations: Go and Python APIs, n8n workflows, WhatsApp bots and MCP servers.
+
+Fredy Rodriguez is a software developer with a Tecnologo degree in Systems Analysis and Development (SENA, 2017) who is currently studying Telecommunications Engineering at UNAD. He works across backend (Go, Python, PostgreSQL), infrastructure (Linux, Docker, Podman, CI/CD) and AI automation (n8n, AI agents, MCP servers, LLM failover). The site is available in Spanish and English. Available for remote work.
+
+## Pages
+
+- [Home](https://fredyrn.com/): services, stack, projects, AI & automation and contact.
+- [About](https://fredyrn.com/pages/about.html): background, what he builds, education and certifications.
+
+## Services
+
+- Backend APIs and services (Go, Python, PostgreSQL, Docker)
+- Business automation with n8n: ETL/ELT, approval flows, secured webhooks (HMAC, OAuth2, mTLS)
+- WhatsApp bots: quotes, scheduling, invoicing
+- AI agents and MCP servers (LLM integrations with DeepSeek, Gemini, GPT)
+- Web scraping and data extraction (Python, Playwright)
+- Docker packaging and VPS deployment (Podman, Traefik/Nginx)
+
+## Projects
+
+- [CI/CD Pipeline for Go Services](https://github.com/FredyRN/digital-barp): CI/CD pipeline for a Go application running in Docker (build, test, deploy).
+- [Music21 Score Generator](https://github.com/FredyRN/music_21): generates musical scores from pitch classes with dynamic transpositions (Python).
+- WhatsApp Bot to Quote to Invoice: n8n workflow that answers price requests with catalog and 19% VAT and generates the invoice PDF automatically.
+- MCP Server - Catalog & Quotes: exposes a product catalog and quote generation to any AI client through the Model Context Protocol.
+
+## Contact
+
+- [Email](mailto:projects@fredyrn.com)
+- [WhatsApp](https://wa.me/573173136585)
+- [GitHub](https://github.com/fredyrn)
+- [LinkedIn](https://www.linkedin.com/in/jfrn/)
+- [Upwork](https://www.upwork.com/freelancers/~0123df9111c0e68ee1)
+- [Blog](https://blog.fredyrn.com/)
+
+## Optional
+
+- [Sitemap](https://fredyrn.com/sitemap.xml)
