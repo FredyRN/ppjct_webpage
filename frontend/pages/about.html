@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="about">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Sobre mí — Fredy Rodriguez | Backend &amp; Automation Engineer</title>
+  <title data-i18n="pageTitle">Sobre mí — Fredy Rodriguez | Backend &amp; Automation Engineer</title>
 
   <meta name="description" content="Sobre Fredy Rodriguez: ingeniero backend (Go, Python) y especialista en automatización e IA. Tecnólogo en Análisis y Desarrollo de Sistemas (SENA 2017) y estudiante de Ingeniería de Telecomunicaciones (UNAD)." />
-  <meta name="keywords" content="Sobre mí, Fredy Rodriguez, Backend, Go, Python, Automatización, n8n, IA, Agentes, Desarrollador, Colombia" />
+  <meta name="keywords" content="Sobre mí, About, Fredy Rodriguez, Backend, Go, Python, Automatización, Automation, n8n, IA, AI, Desarrollador, Colombia" />
   <meta name="author" content="Fredy Rodriguez Nupia" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0a0a12" />
@@ -73,14 +73,15 @@
     <nav class="nav">
       <a href="../index.html" class="logo"><img src="../assets/img/icon/32x32/icon-32x32.png" alt="Fredy Rodriguez" />Fredy Rodriguez</a>
       <div class="nav-links" id="navlinks">
-        <a href="../index.html#services">Servicios</a>
-        <a href="../index.html#stack">Stack</a>
-        <a href="../index.html#projects">Proyectos</a>
-        <a href="../index.html#ai">IA &amp; Automatización</a>
-        <a href="about.html" aria-current="page">Sobre mí</a>
-        <a href="../index.html#contact">Contacto</a>
-        <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill">Hire me</a>
+        <a href="../index.html#services" data-i18n="navServices">Servicios</a>
+        <a href="../index.html#stack" data-i18n="navStack">Stack</a>
+        <a href="../index.html#projects" data-i18n="navProjects">Proyectos</a>
+        <a href="../index.html#ai" data-i18n="navAI">IA &amp; Automatización</a>
+        <a href="about.html" aria-current="page" data-i18n="navAbout">Sobre mí</a>
+        <a href="../index.html#contact" data-i18n="navContact">Contacto</a>
+        <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill" data-i18n="navHire">Hire me</a>
       </div>
+      <button data-lang-toggle class="lang-btn" aria-label="Switch to English">🌐 EN</button>
       <button class="burger" id="burger" aria-label="Menu">☰</button>
     </nav>
   </header>
@@ -91,28 +92,20 @@
       <div class="wrap" style="grid-template-columns:1fr">
         <div class="reveal">
           <nav class="eyebrow" aria-label="Breadcrumb">
-            <a href="../index.html">Inicio</a> › Sobre mí
+            <a href="../index.html" data-i18n="breadcrumbHome">Inicio</a> › <span data-i18n="breadcrumbCurrent">Sobre mí</span>
           </nav>
-          <h1 class="h1" style="font-size:clamp(32px,5vw,52px)">Sobre <span class="grad">mí</span></h1>
-          <p>
-            Soy <strong>Fredy Rodriguez</strong>, ingeniero backend y especialista en automatización con IA.
-            Construyo APIs y servicios en <strong>Go</strong> y <strong>Python</strong>, y automatizo procesos de negocio
-            con <strong>n8n</strong>, bots de WhatsApp y agentes de IA. Trabajo remoto desde Neiva, Colombia,
-            en español e inglés.
-          </p>
-          <p>
-            Me gusta resolver problemas concretos: quitar trabajo repetitivo, conectar sistemas que no se hablan
-            entre sí y dejar todo probado, documentado y corriendo en producción.
-          </p>
+          <h1 class="h1" style="font-size:clamp(32px,5vw,52px)" data-i18n="heroTitle">Sobre <span class="grad">mí</span></h1>
+          <p data-i18n="heroP1">Soy <strong>Fredy Rodriguez</strong>, ingeniero backend y especialista en automatización con IA. Construyo APIs y servicios en <strong>Go</strong> y <strong>Python</strong>, y automatizo procesos de negocio con <strong>n8n</strong>, bots de WhatsApp y agentes de IA. Trabajo remoto desde Neiva, Colombia, en español e inglés.</p>
+          <p data-i18n="heroP2">Me gusta resolver problemas concretos: quitar trabajo repetitivo, conectar sistemas que no se hablan entre sí y dejar todo probado, documentado y corriendo en producción.</p>
           <div class="chips">
-            <span class="chip">Backend (Go · Python)</span>
-            <span class="chip">Automatización n8n</span>
-            <span class="chip">IA &amp; Agentes</span>
-            <span class="chip">Remoto</span>
+            <span class="chip" data-i18n="chip1">Backend (Go · Python)</span>
+            <span class="chip" data-i18n="chip2">Automatización n8n</span>
+            <span class="chip" data-i18n="chip3">IA &amp; Agentes</span>
+            <span class="chip" data-i18n="chip4">Remoto</span>
           </div>
           <div class="cta">
-            <a href="../index.html#contact" class="btn primary">Hablemos de tu proyecto</a>
-            <a href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost">💬 WhatsApp</a>
+            <a href="../index.html#contact" class="btn primary" data-i18n="ctaPrimary">Hablemos de tu proyecto</a>
+            <a data-wa href="https://wa.me/573173136585" target="_blank" class="btn ghost" data-i18n="ctaWhatsapp">💬 WhatsApp</a>
           </div>
         </div>
       </div>
@@ -121,26 +114,29 @@
     <!-- What I build -->
     <section id="what-i-do">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">Servicios</div><h2>Qué <span class="grad">construyo</span></h2></div>
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="srvEyebrow">Servicios</div>
+          <h2 data-i18n="srvTitle">Qué <span class="grad">construyo</span></h2>
+        </div>
         <div class="grid two">
           <article class="card">
-            <h3>⚙️ APIs y servicios backend</h3>
-            <p>APIs REST en Go y Python con PostgreSQL, autenticación, validaciones, tests y despliegue en Docker.</p>
+            <h3 data-i18n="a1Title">⚙️ APIs y servicios backend</h3>
+            <p data-i18n="a1Desc">APIs REST en Go y Python con PostgreSQL, autenticación, validaciones, tests y despliegue en Docker.</p>
             <div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
           </article>
           <article class="card">
-            <h3>🔗 Automatización con n8n</h3>
-            <p>Flujos ETL/ELT, aprobaciones multi-paso, webhooks seguros (HMAC, OAuth2, mTLS) y observabilidad.</p>
+            <h3 data-i18n="a2Title">🔗 Automatización con n8n</h3>
+            <p data-i18n="a2Desc">Flujos ETL/ELT, aprobaciones multi-paso, webhooks seguros (HMAC, OAuth2, mTLS) y observabilidad.</p>
             <div class="tags"><span class="tag">n8n</span><span class="tag">Webhooks</span><span class="tag">OpenTelemetry</span></div>
           </article>
           <article class="card">
-            <h3>💬 Bots de WhatsApp</h3>
-            <p>Cotizaciones, agendamiento y facturación automática: el cliente recibe respuesta al instante.</p>
-            <div class="tags"><span class="tag">WhatsApp API</span><span class="tag">Automatización</span></div>
+            <h3 data-i18n="a3Title">💬 Bots de WhatsApp</h3>
+            <p data-i18n="a3Desc">Cotizaciones, agendamiento y facturación automática: el cliente recibe respuesta al instante.</p>
+            <div class="tags"><span class="tag">WhatsApp API</span><span class="tag" data-i18n="tagAutomation">Automatización</span></div>
           </article>
           <article class="card">
-            <h3>🤖 Agentes de IA y MCP</h3>
-            <p>Integraciones con LLMs (DeepSeek, Gemini, GPT) y servidores MCP que conectan tu catálogo a la IA.</p>
+            <h3 data-i18n="a4Title">🤖 Agentes de IA y MCP</h3>
+            <p data-i18n="a4Desc">Integraciones con LLMs (DeepSeek, Gemini, GPT) y servidores MCP que conectan tu catálogo a la IA.</p>
             <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">LLM</span></div>
           </article>
         </div>
@@ -150,23 +146,26 @@
     <!-- Education -->
     <section id="education">
       <div class="wrap reveal">
-        <div class="sec-head"><div class="eyebrow">Formación</div><h2>Educación y <span class="grad">certificaciones</span></h2></div>
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="eduEyebrow">Formación</div>
+          <h2 data-i18n="eduTitle">Educación y <span class="grad">certificaciones</span></h2>
+        </div>
         <div class="grid two">
           <article class="card">
-            <h3>🎓 Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
-            <p>SENA, Neiva · <strong>2017</strong></p>
+            <h3 data-i18n="edu1Title">🎓 Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+            <p data-i18n="edu1Desc">SENA, Neiva · <strong>2017</strong></p>
           </article>
           <article class="card">
-            <h3>📡 Ingeniería de Telecomunicaciones</h3>
-            <p>Universidad Nacional Abierta y a Distancia (UNAD) · <em>en curso</em></p>
+            <h3 data-i18n="edu2Title">📡 Ingeniería de Telecomunicaciones</h3>
+            <p data-i18n="edu2Desc">Universidad Nacional Abierta y a Distancia (UNAD) · <em>en curso</em></p>
           </article>
           <article class="card">
-            <h3>📘 Fundamentos de Metodologías Ágiles</h3>
-            <p>SENA · 2015 · 80 horas</p>
+            <h3 data-i18n="edu3Title">📘 Fundamentos de Metodologías Ágiles</h3>
+            <p data-i18n="edu3Desc">SENA · 2015 · 80 horas</p>
           </article>
           <article class="card">
-            <h3>🌐 CCNA: Switching, Routing and Wireless Essentials</h3>
-            <p>Cisco · <em>en curso</em></p>
+            <h3 data-i18n="edu4Title">🌐 CCNA: Switching, Routing and Wireless Essentials</h3>
+            <p data-i18n="edu4Desc">Cisco · <em>en curso</em></p>
           </article>
         </div>
       </div>
@@ -176,12 +175,12 @@
     <section id="contact">
       <div class="wrap reveal">
         <div class="cta-band">
-          <h2>¿Trabajamos <span class="grad">juntos</span>?</h2>
-          <p>Cuéntame qué quieres automatizar o construir y te propongo un plan con precio y plazo.</p>
+          <h2 data-i18n="ctaTitle">¿Trabajamos <span class="grad">juntos</span>?</h2>
+          <p data-i18n="ctaDesc">Cuéntame qué quieres automatizar o construir y te propongo un plan con precio y plazo.</p>
           <div class="cta" style="justify-content:center">
-            <a href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn primary">💬 WhatsApp</a>
-            <a href="mailto:projects@fredyrn.com" class="btn ghost">✉️ Email</a>
-            <a href="../index.html#contact" class="btn ghost">Más formas de contacto</a>
+            <a data-wa href="https://wa.me/573173136585" target="_blank" class="btn primary" data-i18n="ctaWhatsapp">💬 WhatsApp</a>
+            <a href="mailto:projects@fredyrn.com" class="btn ghost" data-i18n="ctaEmail">✉️ Email</a>
+            <a href="../index.html#contact" class="btn ghost" data-i18n="ctaMore">Más formas de contacto</a>
           </div>
         </div>
       </div>
@@ -190,15 +189,16 @@
 
   <footer>
     <div class="wrap">
-      <span>© 2026 Fredy Rodriguez. Backend &amp; Automation Engineer.</span>
+      <span data-i18n="footerCopy">© 2026 Fredy Rodriguez. Backend &amp; Automation Engineer.</span>
       <span>
-        <a href="../index.html" style="color:var(--muted)">Inicio</a> ·
+        <a href="../index.html" style="color:var(--muted)" data-i18n="breadcrumbHome">Inicio</a> ·
         <a href="https://blog.fredyrn.com/" style="color:var(--muted)">Blog</a> ·
         <a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a>
       </span>
     </div>
   </footer>
 
+  <script src="../assets/js/i18n.js"></script>
   <script>
     const burger = document.getElementById('burger');
     const navlinks = document.getElementById('navlinks');

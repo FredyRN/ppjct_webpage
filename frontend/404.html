@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="notFound">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — Página no encontrada | Fredy Rodriguez</title>
+  <title data-i18n="pageTitle">404 — Página no encontrada | Fredy Rodriguez</title>
   <meta name="description" content="La página que buscas no existe. Vuelve al inicio para ver el portafolio de Fredy Rodriguez: backend en Go, automatización con n8n y agentes de IA." />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#0a0a12" />
@@ -16,6 +16,7 @@
   <meta property="og:image" content="https://fredyrn.com/assets/img/projects/whatsapp-bot.png" />
   <meta property="og:description" content="La página que buscas no existe." />
   <meta property="og:site_name" content="Fredy Rodriguez" />
+  <meta property="og:locale" content="es_CO" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -49,14 +50,15 @@
     <nav class="nav">
       <a href="index.html" class="logo"><img src="assets/img/icon/32x32/icon-32x32.png" alt="Fredy Rodriguez" />Fredy Rodriguez</a>
       <div class="nav-links" id="navlinks">
-        <a href="index.html#services">Servicios</a>
-        <a href="index.html#stack">Stack</a>
-        <a href="index.html#projects">Proyectos</a>
-        <a href="index.html#ai">IA &amp; Automatización</a>
-        <a href="pages/about.html">Sobre mí</a>
-        <a href="index.html#contact">Contacto</a>
-        <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill">Hire me</a>
+        <a href="index.html#services" data-i18n="navServices">Servicios</a>
+        <a href="index.html#stack" data-i18n="navStack">Stack</a>
+        <a href="index.html#projects" data-i18n="navProjects">Proyectos</a>
+        <a href="index.html#ai" data-i18n="navAI">IA &amp; Automatización</a>
+        <a href="pages/about.html" data-i18n="navAbout">Sobre mí</a>
+        <a href="index.html#contact" data-i18n="navContact">Contacto</a>
+        <a href="https://www.upwork.com/freelancers/~0123df9111c0e68ee1" target="_blank" class="pill" data-i18n="navHire">Hire me</a>
       </div>
+      <button data-lang-toggle class="lang-btn" aria-label="Switch to English">🌐 EN</button>
       <button class="burger" id="burger" aria-label="Menu">☰</button>
     </nav>
   </header>
@@ -65,12 +67,12 @@
     <section class="e404">
       <div class="wrap">
         <div class="code grad">404</div>
-        <h1 class="h1" style="font-size:clamp(26px,4vw,38px)">Esta página no existe</h1>
-        <p>Puede que el enlace esté roto o que la página se haya movido. Vuelve al inicio para ver mis proyectos y servicios de automatización.</p>
+        <h1 class="h1" style="font-size:clamp(26px,4vw,38px)" data-i18n="heading">Esta página no existe</h1>
+        <p data-i18n="text">Puede que el enlace esté roto o que la página se haya movido. Vuelve al inicio para ver mis proyectos y servicios de automatización.</p>
         <div class="cta">
-          <a href="index.html" class="btn primary">← Volver al inicio</a>
-          <a href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost">💬 WhatsApp</a>
-          <a href="https://blog.fredyrn.com/" class="btn ghost">Blog</a>
+          <a href="index.html" class="btn primary" data-i18n="btnHome">← Volver al inicio</a>
+          <a data-wa href="https://wa.me/573173136585" target="_blank" class="btn ghost" data-i18n="btnWhatsapp">💬 WhatsApp</a>
+          <a href="https://blog.fredyrn.com/" class="btn ghost" data-i18n="btnBlog">Blog</a>
         </div>
       </div>
     </section>
@@ -78,11 +80,12 @@
 
   <footer>
     <div class="wrap">
-      <span>© 2026 Fredy Rodriguez. Backend &amp; Automation Engineer.</span>
+      <span data-i18n="footerCopy">© 2026 Fredy Rodriguez. Backend &amp; Automation Engineer.</span>
       <span><a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a></span>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script>
     const burger = document.getElementById('burger');
     const navlinks = document.getElementById('navlinks');
