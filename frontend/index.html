@@ -160,32 +160,82 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (BENTO GRID) -->
     <section id="projects">
       <div class="wrap reveal">
         <div class="sec-head">
-          <div class="eyebrow" data-i18n="projectsEyebrow">Projects</div>
+          <div class="eyebrow" data-i18n="projectsEyebrow">Projects & Stack</div>
           <h2 data-i18n="projectsTitle">Casos de estudio <span class="grad">& Proyectos</span></h2>
         </div>
-        <div class="grid">
-          <div class="card">
-            <h3 data-i18n="prj1Title">🗂️ Plataforma ERP/CRM para Pymes</h3>
-            <p data-i18n="prj1Desc">Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
-            <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Python</span></div>
+        
+        <div class="bento-grid">
+          <!-- BENTO 1: DESTACADO AUTOMATIZACIÓN (8 cols) -->
+          <div class="bento-card span-8 accent">
+            <div>
+              <div class="bento-badge">⚡ ROI & Automatización IA</div>
+              <h3 data-i18n="ai1Title">Bot WhatsApp → Cotización → Factura</h3>
+              <p data-i18n="ai1Impact"><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
+              
+              <div class="bento-metrics">
+                <div class="metric"><span class="num">3s</span><span class="lbl">Respuesta bot</span></div>
+                <div class="metric"><span class="num">100%</span><span class="lbl">Facturación autom.</span></div>
+                <div class="metric"><span class="num">-70%</span><span class="lbl">Carga operativa</span></div>
+              </div>
+            </div>
+            
+            <div class="tags">
+              <span class="tag">n8n</span><span class="tag">WhatsApp API</span><span class="tag">Python</span><span class="tag">PDF Engine</span>
+            </div>
+          </div>
+
+          <!-- BENTO 2: STACK DE VANGUARDIA (4 cols) -->
+          <div class="bento-card span-4">
+            <div>
+              <div class="bento-badge">🚀 Stack Core</div>
+              <h3>Tecnologías Principales</h3>
+              <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">Herramientas que domino y utilizo en producción a diario.</p>
+              
+              <div class="bento-stack-grid">
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/python" alt="Python" /> Python</div>
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/go" alt="Golang" /> Go</div>
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" /> n8n</div>
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker" /> Docker</div>
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/postgresql" alt="Postgres" /> Postgres</div>
+                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/rust/white" alt="Rust" /> Rust</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BENTO 3: ERP / CRM (4 cols) -->
+          <div class="bento-card span-4">
+            <div>
+              <h3 data-i18n="prj1Title">🗂️ Plataforma ERP/CRM para Pymes</h3>
+              <p data-i18n="prj1Desc">Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
+              <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Python</span></div>
+            </div>
             <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank" data-i18n="prj1Cta">Ver código →</a>
           </div>
-          <div class="card">
-            <h3 data-i18n="prj2Title">⚡ Engine / Microservicio en Go de Alto Rendimiento</h3>
-            <p data-i18n="prj2Desc">Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
-            <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">High Performance</span></div>
+
+          <!-- BENTO 4: ENGINE GO (4 cols) -->
+          <div class="bento-card span-4">
+            <div>
+              <h3 data-i18n="prj2Title">⚡ Engine / Microservicio en Go</h3>
+              <p data-i18n="prj2Desc">Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
+              <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div>
+            </div>
             <a class="cta-line" href="https://github.com/FredyRN/digital-barp" target="_blank" data-i18n="prj2Cta">Ver código →</a>
           </div>
-          <div class="card">
-            <h3 data-i18n="prj3Title">🤖 Motor de Agentes IA & Servidor MCP</h3>
-            <p data-i18n="prj3Desc">Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
-            <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">FastAPI</span><span class="tag">Python</span></div>
+
+          <!-- BENTO 5: AGENTES IA & MCP (4 cols) -->
+          <div class="bento-card span-4">
+            <div>
+              <h3 data-i18n="prj3Title">🤖 Motor Agentes IA & MCP</h3>
+              <p data-i18n="prj3Desc">Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
+              <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">FastAPI</span></div>
+            </div>
             <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank" data-i18n="prj3Cta">Ver repositorio →</a>
           </div>
+
         </div>
       </div>
     </section>
