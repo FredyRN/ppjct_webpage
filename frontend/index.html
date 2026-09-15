@@ -68,18 +68,22 @@
     </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="wrap">
-        <div class="reveal">
-          <div class="eyebrow" data-i18n="heroEyebrow">Fredy Rodriguez — Backend & Automation Engineer (+8 años)</div>
-          <h1 class="h1" data-i18n="heroTitle">Ingeniería Backend & <span class="grad">Automatización con IA</span> para Escalar tu Negocio.</h1>
-          <p data-i18n="heroDesc">Elimina tareas repetitivas, acelera tus tiempos de respuesta y optimiza tu operación con <strong>arquitecturas de backend de alto rendimiento, agentes de IA y flujos automáticos</strong>.</p>
-          <div class="cta">
-            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" data-i18n="heroBtnCal">📅 Agendar Consultoría Gratuita</a>
-            <a id="wa-btn-hero" data-wa href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost" data-i18n="heroBtnWhatsapp">💬 Hablar por WhatsApp</a>
-            <a href="https://github.com/fredyrn" target="_blank" class="btn ghost" data-i18n="heroBtnGithub">📄 Ver GitHub</a>
+  <main class="wrap">
+
+    <!-- HERO & TERMINAL BENTO ROW -->
+    <section class="reveal">
+      <div class="bento-grid">
+        <!-- Main Hero Card -->
+        <div class="bento-card span-8 accent">
+          <div>
+            <div class="bento-badge" data-i18n="heroEyebrow">⚡ Fredy Rodriguez — Backend & Automation Engineer (+8 años)</div>
+            <h1 class="h1" data-i18n="heroTitle">Ingeniería Backend & <span class="grad">Automatización con IA</span> para Escalar tu Negocio.</h1>
+            <p data-i18n="heroDesc">Elimina tareas repetitivas, acelera tus tiempos de respuesta y optimiza tu operación con <strong>arquitecturas de backend de alto rendimiento, agentes de IA y flujos automáticos</strong>.</p>
+            <div class="cta">
+              <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" data-i18n="heroBtnCal">📅 Agendar Consultoría Gratuita</a>
+              <a id="wa-btn-hero" data-wa href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost" data-i18n="heroBtnWhatsapp">💬 Hablar por WhatsApp</a>
+              <a href="https://github.com/fredyrn" target="_blank" class="btn ghost" data-i18n="heroBtnGithub">📄 Ver GitHub</a>
+            </div>
           </div>
           <div class="chips">
             <span class="chip" data-i18n="heroChip1">+8 años experiencia</span>
@@ -88,8 +92,12 @@
           </div>
         </div>
 
-        <div class="viz reveal">
-          <div class="avatar"><img src="assets/img/icon/128x128/icon-128x128.png" alt="Fredy Rodriguez" /></div>
+        <!-- Terminal Snippet Card -->
+        <div class="bento-card span-4" style="justify-content: space-between;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <span class="bento-badge" style="margin-bottom:0;" data-i18n="cardF2">✓ Producción end-to-end</span>
+            <img src="assets/img/icon/64x64/icon-64x64.png" alt="FR" style="width:32px; height:32px; border-radius:50%;" />
+          </div>
           <div class="term">
             <div class="term-bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span></div>
             <div class="term-body">
@@ -100,217 +108,194 @@
               <div class="ln">}</div>
             </div>
           </div>
-          <div class="float-card f1">⚡ Go · n8n · Docker · MCP</div>
-          <div class="float-card f2" data-i18n="cardF2">✓ Producción end-to-end</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUICK SERVICES / SOLUCIONES RAPIDAS -->
-    <section id="services">
-      <div class="wrap reveal">
-        <div class="sec-head">
-          <div class="eyebrow" data-i18n="servicesEyebrow">Servicios de Automatización & Backend</div>
-          <h2 data-i18n="servicesTitle">Soluciones rápidas para <span class="grad">cuellos de botella</span></h2>
-          <p data-i18n="servicesDesc">Implementación de soluciones listas para producción orientadas a retorno de inversión directo.</p>
-        </div>
-        <div class="grid two">
-          <div class="card accent" style="display:flex; flex-direction:column; justify-content:space-between;">
-            <div>
-              <h3 data-i18n="srvAutoTitle">🤖 Automatización con IA & n8n</h3>
-              <p data-i18n="srvAutoDesc">Bots de WhatsApp, flujos n8n, agentes de IA y servidores MCP. Elimina tareas repetitivas y reduce tiempos operativos en un 70%.</p>
-              <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp Bots</span><span class="tag">AI Agents</span><span class="tag">MCP</span></div>
-            </div>
-            <a href="services/automation.html" class="cta-line" style="margin-top:16px;" data-i18n="srvAutoCta">Ver servicios de automatización →</a>
-          </div>
-          <div class="card accent" style="display:flex; flex-direction:column; justify-content:space-between;">
-            <div>
-              <h3 data-i18n="srvBackTitle">⚡ Ingeniería Backend</h3>
-              <p data-i18n="srvBackDesc">APIs de alto rendimiento en Go y Python, microservicios Docker, web scraping, despliegue VPS y CI/CD con GitHub Actions.</p>
-              <div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span></div>
-            </div>
-            <a href="services/backend.html" class="cta-line" style="margin-top:16px;" data-i18n="srvBackCta">Ver servicios de backend →</a>
+          <div class="tags" style="margin-top:16px;">
+            <span class="tag">Go</span>
+            <span class="tag">Python</span>
+            <span class="tag">n8n</span>
+            <span class="tag">Docker</span>
+            <span class="tag">MCP</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STACK -->
-    <section id="stack">
-      <div class="wrap reveal">
-        <div class="sec-head">
-          <div class="eyebrow" data-i18n="stackEyebrow">Stack</div>
-          <h2 data-i18n="stackTitle">Con lo que <span class="grad">trabajo a diario</span></h2>
+    <!-- SERVICES & TECH STACK BENTO ROW -->
+    <section id="services" class="reveal">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="servicesEyebrow">Servicios de Automatización & Backend</div>
+        <h2 data-i18n="servicesTitle">Soluciones rápidas para <span class="grad">cuellos de botella</span></h2>
+      </div>
+      <div class="bento-grid">
+        <!-- Automation & AI Card -->
+        <div class="bento-card span-4 accent">
+          <div>
+            <h3 data-i18n="srvAutoTitle">🤖 Automatización con IA & n8n</h3>
+            <p data-i18n="srvAutoDesc">Bots de WhatsApp, flujos n8n, agentes de IA y servidores MCP. Elimina tareas repetitivas y reduce tiempos operativos en un 70%.</p>
+            <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp Bots</span><span class="tag">AI Agents</span><span class="tag">MCP</span></div>
+          </div>
+          <a href="services/automation.html" class="cta-line" data-i18n="srvAutoCta">Ver servicios de automatización →</a>
         </div>
-        <div class="stack">
-          <span><img src="https://cdn.simpleicons.org/python" alt="Python" /> Python</span>
-          <span><img src="https://cdn.simpleicons.org/go" alt="Golang" /> Golang</span>
-          <span><img src="https://cdn.simpleicons.org/rust/white" alt="Rust" /> Rust</span>
-          <span><img src="https://cdn.simpleicons.org/flutter" alt="Flutter" /> Flutter</span>
-          <span><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" /> PostgreSQL</span>
-          <span><img src="https://cdn.simpleicons.org/django/44B78B" alt="Django" /> Django</span>
-          <span><img src="https://cdn.simpleicons.org/n8n" alt="n8n" /> n8n</span>
-          <span><img src="https://cdn.simpleicons.org/docker" alt="Docker" /> Docker</span>
-          <span><img src="https://cdn.simpleicons.org/podman" alt="Podman" /> Podman</span>
-          <span><img src="https://cdn.simpleicons.org/linux/white" alt="Linux" /> Linux</span>
-          <span><img src="https://cdn.simpleicons.org/git" alt="Git" /> Git / GitHub Actions</span>
-          <span><img src="https://cdn.simpleicons.org/opentelemetry" alt="OpenTelemetry" /> OpenTelemetry</span>
-          <span><img src="https://cdn.simpleicons.org/redis" alt="Redis" /> Redis / APIs</span>
+
+        <!-- Backend Engineering Card -->
+        <div class="bento-card span-4 accent">
+          <div>
+            <h3 data-i18n="srvBackTitle">⚡ Ingeniería Backend</h3>
+            <p data-i18n="srvBackDesc">APIs de alto rendimiento en Go y Python, microservicios Docker, web scraping, despliegue VPS y CI/CD con GitHub Actions.</p>
+            <div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span></div>
+          </div>
+          <a href="services/backend.html" class="cta-line" data-i18n="srvBackCta">Ver servicios de backend →</a>
+        </div>
+
+        <!-- Tech Stack Bento Card -->
+        <div class="bento-card span-4">
+          <div>
+            <span class="eyebrow" data-i18n="stackEyebrow">Stack</span>
+            <h3 data-i18n="stackTitle">Con lo que <span class="grad">trabajo a diario</span></h3>
+            <div class="bento-stack-grid">
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/python" alt="Python" /> Python</div>
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/go" alt="Golang" /> Golang</div>
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/rust/white" alt="Rust" /> Rust</div>
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" /> n8n</div>
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker" /> Docker</div>
+              <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" /> PostgreSQL</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS (BENTO GRID) -->
-    <section id="projects">
-      <div class="wrap reveal">
-        <div class="sec-head">
-          <div class="eyebrow" data-i18n="projectsEyebrow">Projects & Stack</div>
-          <h2 data-i18n="projectsTitle">Casos de estudio <span class="grad">& Proyectos</span></h2>
-        </div>
-        
-        <div class="bento-grid">
-          <!-- BENTO 1: DESTACADO AUTOMATIZACIÓN (8 cols) -->
-          <div class="bento-card span-8 accent">
-            <div>
-              <div class="bento-badge">⚡ ROI & Automatización IA</div>
-              <h3 data-i18n="ai1Title">Bot WhatsApp → Cotización → Factura</h3>
-              <p data-i18n="ai1Impact"><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
-              
-              <div class="bento-metrics">
-                <div class="metric"><span class="num">3s</span><span class="lbl">Respuesta bot</span></div>
-                <div class="metric"><span class="num">100%</span><span class="lbl">Facturación autom.</span></div>
-                <div class="metric"><span class="num">-70%</span><span class="lbl">Carga operativa</span></div>
-              </div>
-            </div>
-            
+    <!-- CASE STUDIES & PROJECTS BENTO GRID -->
+    <section id="projects" class="reveal">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="projectsEyebrow">Proyectos</div>
+        <h2 data-i18n="projectsTitle">Casos de estudio <span class="grad">& Proyectos</span></h2>
+      </div>
+      <div class="bento-grid">
+        <!-- Project 1: ERP / CRM Pymes (Featured) -->
+        <div class="bento-card span-8 accent">
+          <div>
+            <span class="bento-badge">Featured System</span>
+            <h3 data-i18n="prj1Title">🗂️ Plataforma ERP/CRM para Pymes</h3>
+            <p data-i18n="prj1Desc">Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
             <div class="tags">
-              <span class="tag">n8n</span><span class="tag">WhatsApp API</span><span class="tag">Python</span><span class="tag">PDF Engine</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">REST API</span>
             </div>
           </div>
-
-          <!-- BENTO 2: STACK DE VANGUARDIA (4 cols) -->
-          <div class="bento-card span-4">
-            <div>
-              <div class="bento-badge">🚀 Stack Core</div>
-              <h3>Tecnologías Principales</h3>
-              <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">Herramientas que domino y utilizo en producción a diario.</p>
-              
-              <div class="bento-stack-grid">
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/python" alt="Python" /> Python</div>
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/go" alt="Golang" /> Go</div>
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" /> n8n</div>
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/docker" alt="Docker" /> Docker</div>
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/postgresql" alt="Postgres" /> Postgres</div>
-                <div class="bento-stack-item"><img src="https://cdn.simpleicons.org/rust/white" alt="Rust" /> Rust</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BENTO 3: ERP / CRM (4 cols) -->
-          <div class="bento-card span-4">
-            <div>
-              <h3 data-i18n="prj1Title">🗂️ Plataforma ERP/CRM para Pymes</h3>
-              <p data-i18n="prj1Desc">Sistema centralizado en Django + PostgreSQL para gestión de clientes, inventarios, autenticación segura y reportes automatizados a escala.</p>
-              <div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Python</span></div>
-            </div>
-            <a class="cta-line" href="https://github.com/FredyRN/clientes_salazar" target="_blank" data-i18n="prj1Cta">Ver código →</a>
-          </div>
-
-          <!-- BENTO 4: ENGINE GO (4 cols) -->
-          <div class="bento-card span-4">
-            <div>
-              <h3 data-i18n="prj2Title">⚡ Engine / Microservicio en Go</h3>
-              <p data-i18n="prj2Desc">Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
-              <div class="tags"><span class="tag">Go</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div>
-            </div>
-            <a class="cta-line" href="https://github.com/FredyRN/digital-barp" target="_blank" data-i18n="prj2Cta">Ver código →</a>
-          </div>
-
-          <!-- BENTO 5: AGENTES IA & MCP (4 cols) -->
-          <div class="bento-card span-4">
-            <div>
-              <h3 data-i18n="prj3Title">🤖 Motor Agentes IA & MCP</h3>
-              <p data-i18n="prj3Desc">Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
-              <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">FastAPI</span></div>
-            </div>
-            <a class="cta-line" href="https://github.com/FredyRN/music_21" target="_blank" data-i18n="prj3Cta">Ver repositorio →</a>
-          </div>
-
+          <a href="https://github.com/fredyrn" target="_blank" class="cta-line" data-i18n="prj1Cta">Ver código →</a>
         </div>
-      </div>
-    </section>
 
-    <!-- AI & AUTOMATION -->
-    <section id="ai">
-      <div class="wrap reveal">
-        <div class="sec-head">
-          <div class="eyebrow" data-i18n="aiEyebrow">AI & Automation</div>
-          <h2 data-i18n="aiTitle">Impacto medible en <span class="grad">producción</span></h2>
-          <p data-i18n="aiDesc">Soluciones orientadas a resultados de negocio concretos.</p>
+        <!-- Project 2: High Performance Go Microservice -->
+        <div class="bento-card span-4">
+          <div>
+            <span class="bento-badge">Backend Engine</span>
+            <h3 data-i18n="prj2Title">⚡ Engine / Microservicio en Go de Alto Rendimiento</h3>
+            <p data-i18n="prj2Desc">Motor de procesamiento asíncrono y API REST optimizada para pipelines de integración continua y cargas de trabajo en tiempo real con Docker.</p>
+            <div class="tags">
+              <span class="tag">Go</span>
+              <span class="tag">Async</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <a href="https://github.com/fredyrn" target="_blank" class="cta-line" data-i18n="prj2Cta">Ver código →</a>
         </div>
-        <div class="grid">
-          <div class="card accent">
-            <img src="assets/img/projects/whatsapp-bot.png" alt="Bot de WhatsApp que cotiza y factura" loading="lazy" width="600" height="350" />
+
+        <!-- Project 3: AI Engine & MCP Server -->
+        <div class="bento-card span-6">
+          <div>
+            <span class="bento-badge">AI Architecture</span>
+            <h3 data-i18n="prj3Title">🤖 Motor de Agentes IA & Servidor MCP</h3>
+            <p data-i18n="prj3Desc">Infraestructura en Python / Go que conecta modelos de lenguaje (Gemini / DeepSeek / GPT) con bases de datos y herramientas mediante protocolo MCP.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Go</span>
+              <span class="tag">MCP</span>
+              <span class="tag">DeepSeek / Gemini</span>
+            </div>
+          </div>
+          <a href="https://github.com/fredyrn" target="_blank" class="cta-line" data-i18n="prj3Cta">Ver repositorio →</a>
+        </div>
+
+        <!-- Project 4: WhatsApp Automation Bot -->
+        <div class="bento-card span-6">
+          <div>
+            <span class="bento-badge">Workflow Automation</span>
             <h3 data-i18n="ai1Title">Bot WhatsApp → Cotización → Factura</h3>
             <p data-i18n="ai1Impact"><strong>Impacto:</strong> Reduce el tiempo de atención al cliente de 15 minutos a 3 segundos. Responde precios con catálogo e IVA al instante y genera la factura en PDF automáticamente.</p>
-            <div class="tags"><span class="tag">n8n</span><span class="tag">WhatsApp API</span><span class="tag">PDF</span></div>
-            <a class="cta-line" href="https://cal.com/fredyrn/cotizacion" target="_blank" data-i18n="ai1Cta">→ Quiero uno igual</a>
+            <div class="tags">
+              <span class="tag">WhatsApp API</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Facturación Auto</span>
+            </div>
           </div>
-          <div class="card accent">
-            <img src="assets/img/projects/n8n-automation.png" alt="Flujo de automatización en n8n" loading="lazy" width="600" height="350" />
-            <h3 data-i18n="ai2Title">Automatización n8n & Pipelines ETL</h3>
-            <p data-i18n="ai2Impact"><strong>Impacto:</strong> Pipelines capaces de procesar +50,000 eventos diarios con observabilidad completa (OpenTelemetry), webhooks seguros y failover automático.</p>
-            <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">Observabilidad</span></div>
-            <a class="cta-line" href="https://cal.com/fredyrn/cotizacion" target="_blank" data-i18n="ai2Cta">→ Automatiza tu proceso</a>
+          <a id="wa-btn-prj" data-wa href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="cta-line" data-i18n="ai1Cta">→ Quiero uno igual</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT & CONTACT BENTO ROW -->
+    <section id="contact" class="reveal">
+      <div class="bento-grid">
+        <!-- Impact Metrics Bento Card -->
+        <div class="bento-card span-8 accent">
+          <div>
+            <span class="eyebrow" data-i18n="aiEyebrow">AI & Automation</span>
+            <h2 data-i18n="aiTitle">Impacto medible en <span class="grad">producción</span></h2>
+            <p data-i18n="aiDesc">Soluciones orientadas a resultados de negocio concretos.</p>
+
+            <div class="bento-metrics">
+              <div class="metric">
+                <span class="num">-70%</span>
+                <span class="lbl">Tiempo operativo manual</span>
+              </div>
+              <div class="metric">
+                <span class="num">&lt; 3s</span>
+                <span class="lbl">Respuesta automática WhatsApp</span>
+              </div>
+              <div class="metric">
+                <span class="num">+50K</span>
+                <span class="lbl">Eventos/día procesados</span>
+              </div>
+            </div>
+
+            <p data-i18n="ai2Impact" style="margin-top:14px;"><strong>Impacto:</strong> Pipelines capaces de procesar +50,000 eventos diarios con observabilidad completa (OpenTelemetry), webhooks seguros y failover automático.</p>
           </div>
-          <div class="card accent">
-            <img src="assets/img/projects/factura.png" alt="Agentes de IA y servidores MCP" loading="lazy" width="600" height="350" />
-            <h3 data-i18n="ai3Title">Agentes de IA + Servidores MCP</h3>
-            <p data-i18n="ai3Impact"><strong>Impacto:</strong> Agentes autónomos que consultan inventarios y bases de datos con failover entre modelos (DeepSeek, Gemini, GPT), reduciendo tiempos operativos en un 70%.</p>
-            <div class="tags"><span class="tag">AI Agents</span><span class="tag">MCP</span><span class="tag">LLM failover</span></div>
-            <a class="cta-line" href="https://cal.com/fredyrn/cotizacion" target="_blank" data-i18n="ai3Cta">→ Construye tu agente</a>
+          <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="cta-line" data-i18n="ai2Cta">→ Automatiza tu proceso</a>
+        </div>
+
+        <!-- Contact & Book Call Bento Card -->
+        <div class="bento-card span-4 accent" style="justify-content: space-between;">
+          <div>
+            <span class="bento-badge">Let's Connect</span>
+            <h2 data-i18n="contactTitle">¿Listo para <span class="grad">automatizar tu operación</span>?</h2>
+            <p data-i18n="contactDesc">Agenda una llamada corta de 15 minutos para revisar tus cuellos de botella y diseñarte una solución a medida.</p>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" style="justify-content:center;" data-i18n="contactCal">📅 Agendar en Cal.com</a>
+            <a id="wa-btn-contact" data-wa href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20automatizar%20mi%20negocio" target="_blank" class="btn ghost" style="justify-content:center;" data-i18n="contactWhatsapp">💬 WhatsApp</a>
+            <a href="mailto:jfredyrn@gmail.com" class="btn ghost" style="justify-content:center;" data-i18n="contactEmail">✉️ Email</a>
+            <a href="https://www.linkedin.com/in/jfrn/" target="_blank" class="btn ghost" style="justify-content:center;" data-i18n="contactLinkedin">🔗 LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="wrap reveal">
-        <div class="cta-band">
-          <h2 data-i18n="contactTitle">¿Listo para <span class="grad">automatizar tu operación</span>?</h2>
-          <p data-i18n="contactDesc">Agenda una llamada corta de 15 minutos para revisar tus cuellos de botella y diseñarte una solución a medida.</p>
-          <div class="cta" style="justify-content:center">
-            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" data-i18n="contactCal">📅 Agendar en Cal.com</a>
-            <a id="wa-btn-contact" data-wa href="https://wa.me/573173136585?text=Hola%20Fredy,%20quiero%20que%20me%20automatices%20algo" target="_blank" class="btn ghost" data-i18n="contactWhatsapp">💬 WhatsApp</a>
-            <a href="mailto:projects@fredyrn.com" class="btn ghost" data-i18n="contactEmail">✉️ Email</a>
-            <a href="https://www.linkedin.com/in/jfrn/" target="_blank" class="btn ghost" data-i18n="contactLinkedin">🔗 LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
     <div class="wrap">
       <span data-i18n="footerCopy">© 2026 Fredy Rodriguez. Backend & Automation Engineer.</span>
-      <span><a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a> · <a href="https://blog.fredyrn.com/" style="color:var(--muted)">Blog</a></span>
+      <div style="display:flex; gap:16px;">
+        <a href="https://github.com/fredyrn" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jfrn/" target="_blank">LinkedIn</a>
+        <a href="https://blog.fredyrn.com/" target="_blank">Blog</a>
+      </div>
     </div>
   </footer>
 
   <script src="assets/js/i18n.js"></script>
-  <script>
-    // Menú móvil
-    const burger = document.getElementById('burger');
-    const navlinks = document.getElementById('navlinks');
-    burger.addEventListener('click', () => navlinks.classList.toggle('open'));
-    navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
-
-    // Revelar al hacer scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
