@@ -6,17 +6,23 @@ Fredy Rodriguez is a software developer with a Tecnologo degree in Systems Analy
 
 ## Pages
 
-- [Home](https://fredyrn.com/): services, stack, projects, AI & automation and contact.
+- [Home](https://fredyrn.com/): overview, services, stack, projects, AI & automation and contact.
+- [Automation](https://fredyrn.com/pages/automation.html): AI & n8n automation services — WhatsApp bots, ETL pipelines, AI agents, MCP servers.
+- [Backend](https://fredyrn.com/pages/backend.html): backend engineering services — Go/Python APIs, web scraping, Docker deployment, CI/CD.
 - [About](https://fredyrn.com/pages/about.html): background, what he builds, education and certifications.
 
 ## Services
 
-- Backend APIs and services (Go, Python, PostgreSQL, Docker)
+### Automation & AI
+- WhatsApp bots: quotes, scheduling, invoicing (response time from 15 min to 3 seconds)
 - Business automation with n8n: ETL/ELT, approval flows, secured webhooks (HMAC, OAuth2, mTLS)
-- WhatsApp bots: quotes, scheduling, invoicing
 - AI agents and MCP servers (LLM integrations with DeepSeek, Gemini, GPT)
+- Pipelines processing +50,000 daily events with OpenTelemetry observability
+
+### Backend Engineering
+- Backend APIs and services (Go, Python, PostgreSQL, Docker)
 - Web scraping and data extraction (Python, Playwright)
-- Docker packaging and VPS deployment (Podman, Traefik/Nginx)
+- Docker packaging and VPS deployment (Podman, Traefik/Nginx, GitHub Actions CI/CD)
 
 ## Projects
 
@@ -27,11 +33,11 @@ Fredy Rodriguez is a software developer with a Tecnologo degree in Systems Analy
 
 ## Contact
 
+- [Book a Call](https://cal.com/fredyrn/cotizacion)
 - [Email](mailto:projects@fredyrn.com)
 - [WhatsApp](https://wa.me/573173136585)
 - [GitHub](https://github.com/fredyrn)
 - [LinkedIn](https://www.linkedin.com/in/jfrn/)
-- [Upwork](https://www.upwork.com/freelancers/~0123df9111c0e68ee1)
 - [Blog](https://blog.fredyrn.com/)
 
 ## Optional

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es" data-page="backend">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title data-i18n="pageTitle">Ingeniería Backend — Go, Python, Docker — Fredy Rodriguez</title>
+
+  <meta name="description" content="APIs de alto rendimiento en Go y Python, microservicios Docker, CI/CD y despliegue VPS. +8 años de experiencia. Consultoría gratuita." />
+  <meta name="keywords" content="Backend, Go, Golang, Python, Docker, PostgreSQL, APIs, Microservicios, CI/CD, VPS, Despliegue, Fredy Rodriguez, Ingeniero Backend" />
+  <meta name="author" content="Fredy Rodriguez Nupia" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a12" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ingeniería Backend — Go, Python, Docker — Fredy Rodriguez" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fredyrn.com/assets/img/projects/whatsapp-bot.png" />
+  <meta property="og:url" content="https://fredyrn.com/pages/backend.html" />
+  <meta property="og:description" content="APIs de alto rendimiento en Go y Python, microservicios Docker, CI/CD y despliegue VPS. +8 años de experiencia. Consultoría gratuita." />
+  <meta property="og:site_name" content="Fredy Rodriguez" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ingeniería Backend — Go, Python, Docker — Fredy Rodriguez" />
+  <meta name="twitter:description" content="APIs de alto rendimiento en Go y Python, microservicios Docker, CI/CD y despliegue VPS. +8 años de experiencia." />
+  <meta name="twitter:image" content="https://fredyrn.com/assets/img/projects/whatsapp-bot.png" />
+
+  <link rel="canonical" href="https://fredyrn.com/pages/backend.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Ingeniería Backend — Fredy Rodriguez",
+    "provider": {
+      "@type": "Person",
+      "name": "Fredy Rodriguez",
+      "jobTitle": "Backend & Automation Engineer",
+      "url": "https://fredyrn.com/",
+      "sameAs": [
+        "https://github.com/fredyrn",
+        "https://www.linkedin.com/in/jfrn/",
+        "https://blog.fredyrn.com/"
+      ]
+    },
+    "serviceType": "Backend Engineering & Architecture",
+    "areaServed": "Worldwide",
+    "description": "APIs de alto rendimiento en Go y Python, microservicios Docker, CI/CD y despliegue VPS. +8 años de experiencia.",
+    "url": "https://fredyrn.com/pages/backend.html",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Backend Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "REST APIs & Microservices",
+            "description": "High-performance REST APIs in Go and Python with authentication, rate limiting, and automated testing."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Scraping & Data Extraction",
+            "description": "Resilient scraping bots with proxy rotation, anti-bot bypassing, and structured ETL pipelines."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dockerization & VPS Deployment",
+            "description": "Multi-stage Docker builds, Traefik/Nginx reverse proxies, automated SSL, and CI/CD with GitHub Actions."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="shortcut icon" href="../assets/img/icon/64x64/icon-64x64.png" type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icon/180x180/icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icon/32x32/icon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icon/16x16/icon-16x16.png" />
+  <link rel="manifest" href="../assets/js/manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/modern.css" />
+</head>
+<body>
+
+  <div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+  <header>
+    <nav class="nav">
+      <a href="../index.html" class="logo"><img src="../assets/img/icon/32x32/icon-32x32.png" alt="Fredy Rodriguez" />Fredy Rodriguez</a>
+      <div class="nav-right">
+        <div class="nav-links" id="navlinks">
+          <a href="../index.html#services" data-i18n="navServices">Servicios</a>
+          <a href="automation.html" data-i18n="navAutomation">Automatización</a>
+          <a href="backend.html" aria-current="page" data-i18n="navBackend">Backend</a>
+          <a href="../index.html#projects" data-i18n="navProjects">Proyectos</a>
+          <a href="about.html" data-i18n="navAbout">Sobre mí</a>
+          <a href="../index.html#contact" data-i18n="navContact">Contacto</a>
+          <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="pill" data-i18n="navHire">Agendar Llamada</a>
+        </div>
+        <button data-lang-toggle class="lang-btn" aria-label="Switch to English">🌐 EN</button>
+        <button class="burger" id="burger" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height:auto;padding-top:150px;padding-bottom:30px">
+      <div class="wrap" style="grid-template-columns:1fr">
+        <div class="reveal">
+          <nav class="eyebrow" aria-label="Breadcrumb">
+            <a href="../index.html" data-i18n="breadcrumbHome">Inicio</a> › <span data-i18n="breadcrumbCurrent">Backend</span>
+          </nav>
+          <h1 class="h1" style="font-size:clamp(32px,5vw,52px)" data-i18n="beHeroTitle">Ingeniería Backend de <span class="grad">Alto Rendimiento</span></h1>
+          <p data-i18n="beHeroSubtitle">APIs robustas, microservicios escalables y despliegues Docker listos para producción. Go, Python, PostgreSQL.</p>
+          <div class="cta">
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" data-i18n="beHeroCtaCal">📅 Agendar Consultoría Gratuita</a>
+            <a data-wa href="https://wa.me/573173136585" target="_blank" class="btn ghost" data-i18n="beHeroCtaWa">💬 WhatsApp</a>
+          </div>
+          <div class="chips">
+            <span class="chip">Go</span>
+            <span class="chip">Python</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section id="pain">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="bePainEyebrow">Problemas comunes</div>
+          <h2 data-i18n="bePainTitle">¿Tu backend <span class="grad">te frena</span>?</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3 data-i18n="bePain1Title">🐌 APIs lentas que no escalan</h3>
+            <p data-i18n="bePain1Desc">Cuellos de botella en la base de datos, consultas N+1 no optimizadas y servidores que colapsan ante picos de tráfico.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="bePain2Title">🔥 Deploys manuales con downtime</h3>
+            <p data-i18n="bePain2Desc">Despliegues manuales sin pipelines de CI/CD, propensos a errores humanos y con caídas de servicio en cada actualización.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="bePain3Title">🧱 Código legacy difícil de mantener</h3>
+            <p data-i18n="bePain3Desc">Sistemas monolíticos sin pruebas automatizadas, sin documentación y con deuda técnica que paraliza nuevas funcionalidades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="beSolEyebrow">Servicios Backend</div>
+          <h2 data-i18n="beSolTitle">Lo que <span class="grad">construyo</span></h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3 data-i18n="beSol1Title">⚙️ APIs REST &amp; Microservicios (Go / Python)</h3>
+            <p data-i18n="beSol1Desc">Endpoints de alta velocidad con arquitectura limpia, autenticación JWT/OAuth2, rate limiting, validación estricta y suite completa de pruebas unitarias y de integración.</p>
+            <div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">REST API</span><span class="tag">PostgreSQL</span></div>
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="cta-line" data-i18n="beSol1Cta">Agendar consultoría →</a>
+          </article>
+          <article class="card">
+            <h3 data-i18n="beSol2Title">🤖 Web Scraping &amp; Extracción de Datos</h3>
+            <p data-i18n="beSol2Desc">Bots resilientes con rotación de proxies, bypassing de anti-bots, extracción automatizada y pipelines ETL estructurados en tiempo real.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">ETL</span><span class="tag">Scrapy</span></div>
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="cta-line" data-i18n="beSol2Cta">Agendar consultoría →</a>
+          </article>
+          <article class="card">
+            <h3 data-i18n="beSol3Title">🐳 Dockerización &amp; Despliegue VPS</h3>
+            <p data-i18n="beSol3Desc">Contenedores multi-stage livianos, orquestación con Podman/Docker Compose, proxies inversos Traefik/Nginx, SSL automatizado y CI/CD con GitHub Actions.</p>
+            <div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Traefik</span><span class="tag">GitHub Actions</span></div>
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="cta-line" data-i18n="beSol3Cta">Agendar consultoría →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="beProcessEyebrow">Metodología</div>
+          <h2 data-i18n="beProcessTitle">Proceso de <span class="grad">trabajo</span></h2>
+        </div>
+        <div class="grid four">
+          <article class="card">
+            <h3 data-i18n="beProc1Title">📞 1. Llamada de diagnóstico</h3>
+            <p data-i18n="beProc1Desc">Analizamos tu arquitectura actual, identificamos cuellos de botella y definimos requerimientos técnicos claros.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="beProc2Title">📋 2. Diseño técnico</h3>
+            <p data-i18n="beProc2Desc">Diagramas de arquitectura, selección del stack ideal, contratos de API (OpenAPI/Swagger) y estimación detallada de esfuerzo.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="beProc3Title">⚙️ 3. Desarrollo iterativo</h3>
+            <p data-i18n="beProc3Desc">Sprints cortos con entregas continuas, código limpio, pruebas automatizadas y comunicación constante.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="beProc4Title">🚀 4. Deploy + Monitoreo</h3>
+            <p data-i18n="beProc4Desc">Despliegue containerizado sin tiempo de inactividad, configuración de CI/CD y métricas de observabilidad en tiempo real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="beStackEyebrow">Stack Backend</div>
+          <h2 data-i18n="beStackTitle">Tecnologías <span class="grad">especializadas</span></h2>
+        </div>
+        <div class="stack">
+          <span>Go</span>
+          <span>Python</span>
+          <span>PostgreSQL</span>
+          <span>Django</span>
+          <span>Docker</span>
+          <span>Podman</span>
+          <span>Linux</span>
+          <span>Git / GitHub Actions</span>
+          <span>Redis</span>
+          <span>OpenTelemetry</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section id="cta">
+      <div class="wrap reveal">
+        <div class="cta-band">
+          <h2 data-i18n="beCtaTitle">¿Necesitas un backend que <span class="grad">escale</span>?</h2>
+          <p data-i18n="beCtaDesc">Agenda una consultoría gratuita de 15 minutos para revisar tu arquitectura actual y diseñar la mejor solución.</p>
+          <div class="cta" style="justify-content:center">
+            <a href="https://cal.com/fredyrn/cotizacion" target="_blank" class="btn primary" data-i18n="beCtaCal">📅 Agendar Consultoría Gratuita</a>
+            <a data-wa href="https://wa.me/573173136585" target="_blank" class="btn ghost" data-i18n="beCtaWa">💬 WhatsApp</a>
+            <a href="mailto:projects@fredyrn.com" class="btn ghost" data-i18n="beCtaEmail">✉️ Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span data-i18n="footerCopy">© 2026 Fredy Rodriguez. Backend &amp; Automation Engineer.</span>
+      <span>
+        <a href="../index.html" style="color:var(--muted)" data-i18n="breadcrumbHome">Inicio</a> ·
+        <a href="https://blog.fredyrn.com/" style="color:var(--muted)">Blog</a> ·
+        <a href="https://github.com/FredyRN/ppjct_webpage" target="_blank" style="color:var(--muted)">Repo</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script>
+    const burger = document.getElementById('burger');
+    const navlinks = document.getElementById('navlinks');
+    burger.addEventListener('click', () => navlinks.classList.toggle('open'));
+    navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
