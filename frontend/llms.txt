@@ -7,9 +7,9 @@ Fredy Rodriguez is a software developer with a Tecnologo degree in Systems Analy
 ## Pages
 
 - [Home](https://fredyrn.com/): overview, services, stack, projects, AI & automation and contact.
-- [Automation](https://fredyrn.com/pages/automation.html): AI & n8n automation services — WhatsApp bots, ETL pipelines, AI agents, MCP servers.
-- [Backend](https://fredyrn.com/pages/backend.html): backend engineering services — Go/Python APIs, web scraping, Docker deployment, CI/CD.
-- [About](https://fredyrn.com/pages/about.html): background, what he builds, education and certifications.
+- [Automation](https://fredyrn.com/services/automation.html): AI & n8n automation services — WhatsApp bots, ETL pipelines, AI agents, MCP servers.
+- [Backend](https://fredyrn.com/services/backend.html): backend engineering services — Go/Python APIs, web scraping, Docker deployment, CI/CD.
+- [About](https://fredyrn.com/services/about.html): background, what he builds, education and certifications.
 
 ## Services
 
